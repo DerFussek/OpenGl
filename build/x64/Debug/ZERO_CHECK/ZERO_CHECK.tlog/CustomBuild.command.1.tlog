@@ -1,0 +1,10 @@
+^C:\USERS\TILDU\DOCUMENTS\GITHUB\OPENGL\BUILD\CMAKEFILES\C5350A5B422526032080A770AF7C82FD\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\cmake-4.1.0-windows-x86_64\bin\cmake.exe" -SC:/Users/tildu/Documents/GitHub/OpenGl -BC:/Users/tildu/Documents/GitHub/OpenGl/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/tildu/Documents/GitHub/OpenGl/build/OpenGlProject.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
