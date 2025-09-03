@@ -1,2 +1,12 @@
-C:\Users\tildu\Documents\GitHub\OpenGl\src\main.cpp;C:\Users\tildu\Documents\GitHub\OpenGl\build\OpenGl.dir\Debug\main.obj
-C:\Users\tildu\Documents\GitHub\OpenGl\src\glad.c;C:\Users\tildu\Documents\GitHub\OpenGl\build\OpenGl.dir\Debug\glad.obj
+C:\Users\tildu\Desktop\Code\OpenGl\src\Ball.cpp;C:\Users\tildu\Desktop\Code\OpenGl\build\OpenGl.dir\Debug\Ball.obj
+C:\Users\tildu\Desktop\Code\OpenGl\src\Engine.cpp;C:\Users\tildu\Desktop\Code\OpenGl\build\OpenGl.dir\Debug\Engine.obj
+C:\Users\tildu\Desktop\Code\OpenGl\src\IndexBuffer.cpp;C:\Users\tildu\Desktop\Code\OpenGl\build\OpenGl.dir\Debug\IndexBuffer.obj
+C:\Users\tildu\Desktop\Code\OpenGl\src\Object.cpp;C:\Users\tildu\Desktop\Code\OpenGl\build\OpenGl.dir\Debug\Object.obj
+C:\Users\tildu\Desktop\Code\OpenGl\src\Renderer.cpp;C:\Users\tildu\Desktop\Code\OpenGl\build\OpenGl.dir\Debug\Renderer.obj
+C:\Users\tildu\Desktop\Code\OpenGl\src\Shader.cpp;C:\Users\tildu\Desktop\Code\OpenGl\build\OpenGl.dir\Debug\Shader.obj
+C:\Users\tildu\Desktop\Code\OpenGl\src\ShaderProgramm.cpp;C:\Users\tildu\Desktop\Code\OpenGl\build\OpenGl.dir\Debug\ShaderProgramm.obj
+C:\Users\tildu\Desktop\Code\OpenGl\src\VertexArray.cpp;C:\Users\tildu\Desktop\Code\OpenGl\build\OpenGl.dir\Debug\VertexArray.obj
+C:\Users\tildu\Desktop\Code\OpenGl\src\VertexBuffer.cpp;C:\Users\tildu\Desktop\Code\OpenGl\build\OpenGl.dir\Debug\VertexBuffer.obj
+C:\Users\tildu\Desktop\Code\OpenGl\src\VertexBufferLayout.cpp;C:\Users\tildu\Desktop\Code\OpenGl\build\OpenGl.dir\Debug\VertexBufferLayout.obj
+C:\Users\tildu\Desktop\Code\OpenGl\src\main.cpp;C:\Users\tildu\Desktop\Code\OpenGl\build\OpenGl.dir\Debug\main.obj
+C:\Users\tildu\Desktop\Code\OpenGl\src\glad.c;C:\Users\tildu\Desktop\Code\OpenGl\build\OpenGl.dir\Debug\glad.obj
