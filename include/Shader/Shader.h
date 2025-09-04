@@ -9,7 +9,7 @@ struct ShaderProgramSource {
 
 class Shader {
 public:
-    Shader(const std::string& filepath, bool CreateOnStart);
+    Shader(const std::string& filepath, bool CreateOnStart=true);
     ~Shader();
 
     void Bind() const;

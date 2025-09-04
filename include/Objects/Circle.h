@@ -1,4 +1,4 @@
-// Ball.h
+// Circle.h
 #pragma once
 #include "Object/Object.h"
 #include "VertexArray/VertexArray.h"
@@ -9,9 +9,9 @@
 
 class Renderer; // forward
 
-class Ball : public Object {
+class Circle : public Object {
 public:
-    Ball(float radius, int res);
+    Circle(float radius, int res);
     void render(const Renderer& r) const override; // exakt so!
 
     void setColor(float r,float g,float b,float a=1.0f){ m_Color={r,g,b,a}; }

@@ -18,7 +18,7 @@ void Renderer::DrawArray(const VertexBuffer &vb, const VertexArray &va, const Sh
     va.Bind();
     shader.Bind();
 
-    glDrawArrays(GL_STATIC_DRAW, 0, vb.getCount());
+    glDrawArrays(GL_TRIANGLES, 0, vb.getCount());
 }
 
 void Renderer::DrawObj(const Object& obj) const {

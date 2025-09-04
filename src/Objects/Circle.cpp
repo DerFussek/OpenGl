@@ -1,13 +1,13 @@
-// Ball.cpp
-#include "Objects/Ball.h"
+// Circle.cpp
+#include "Objects/Circle.h"
 #include "Renderer/Renderer.h"
 #include "VertexBuffer/VertexBufferLayout.h"
 #include <cmath>
 
-Ball::Ball(float radius, int res)
+Circle::Circle(float radius, int res)
     : m_Res(res), m_Radius(radius), m_shader("shaders/Basic.shader", true) {}
 
-void Ball::ensureReady() const {
+void Circle::ensureReady() const {
     if (m_ready) return;
     m_va.Bind();
     VertexBufferLayout layout;
@@ -16,7 +16,7 @@ void Ball::ensureReady() const {
     m_ready = true;
 }
 
-std::vector<float> Ball::createPositionVertices() const {
+std::vector<float> Circle::createPositionVertices() const {
     if (m_Res < 2 || m_Radius <= 0.f) return {};
 
     std::vector<float> v; 
@@ -33,19 +33,22 @@ std::vector<float> Ball::createPositionVertices() const {
         v.push_back(m_Position[1] + std::sin(t) * m_Radius);
     }
 
+
     // --- Debug Ausgabe ---
-    std::cout << "Ball vertices (" << v.size()/2 << " Punkte): ";
+    /*
+    std::cout << "Circle vertices (" << v.size()/2 << " Punkte): ";
     for (size_t i = 0; i < v.size(); i+=2) {
         std::cout << "(" << v[i] << ", " << v[i+1] << ") ";
     }
     std::cout << std::endl;
+    */
     // ----------------------
 
     return v;
 }
 
 
-void Ball::render(const Renderer&) const {
+void Circle::render(const Renderer&) const {
     ensureReady();
     auto data = createPositionVertices();
     if (data.empty()) return;

@@ -1,7 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-<<<<<<< HEAD
     <ClCompile Include="C:\Users\tildu\Documents\GitHub\OpenGl\src\Engine\Engine.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -9,6 +8,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="C:\Users\tildu\Documents\GitHub\OpenGl\src\Object\Object.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\tildu\Documents\GitHub\OpenGl\src\Objects\Circle.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="C:\Users\tildu\Documents\GitHub\OpenGl\src\Renderer\Renderer.cpp">
@@ -27,51 +29,18 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="C:\Users\tildu\Documents\GitHub\OpenGl\src\main.cpp">
-=======
-    <ClCompile Include="C:\Users\tildu\Desktop\Code\OpenGl\src\Ball.cpp">
->>>>>>> ef656056668d5939283e255393c4a60a6a29b819
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\tildu\Desktop\Code\OpenGl\src\Engine.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="C:\Users\tildu\Desktop\Code\OpenGl\src\IndexBuffer.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="C:\Users\tildu\Desktop\Code\OpenGl\src\Object.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="C:\Users\tildu\Desktop\Code\OpenGl\src\Renderer.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="C:\Users\tildu\Desktop\Code\OpenGl\src\Shader.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="C:\Users\tildu\Desktop\Code\OpenGl\src\ShaderProgramm.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="C:\Users\tildu\Desktop\Code\OpenGl\src\VertexArray.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="C:\Users\tildu\Desktop\Code\OpenGl\src\VertexBuffer.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="C:\Users\tildu\Desktop\Code\OpenGl\src\VertexBufferLayout.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="C:\Users\tildu\Desktop\Code\OpenGl\src\main.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="C:\Users\tildu\Desktop\Code\OpenGl\src\glad.c">
+    <ClCompile Include="C:\Users\tildu\Documents\GitHub\OpenGl\src\glad.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\tildu\Desktop\Code\OpenGl\CMakeLists.txt" />
+    <CustomBuild Include="C:\Users\tildu\Documents\GitHub\OpenGl\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{63DE369F-1BA6-3765-92EC-6AE59B7B26FE}</UniqueIdentifier>
+      <UniqueIdentifier>{BFF8EFE5-5117-39D6-A58E-C5348474245B}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

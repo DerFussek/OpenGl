@@ -19,6 +19,6 @@ class VertexBuffer {
         void ChangeData(const void *data, unsigned int size);
 
         inline unsigned int getSize() const {return m_Size;}
-        inline unsigned int getCount() const;
+        unsigned int getCount() const;
 
 };

@@ -16,6 +16,7 @@
 				"C:/Users/tildu/Documents/GitHub/OpenGl/src/Engine/Engine.cpp",
 				"C:/Users/tildu/Documents/GitHub/OpenGl/src/IndexBuffer/IndexBuffer.cpp",
 				"C:/Users/tildu/Documents/GitHub/OpenGl/src/Object/Object.cpp",
+				"C:/Users/tildu/Documents/GitHub/OpenGl/src/Objects/Circle.cpp",
 				"C:/Users/tildu/Documents/GitHub/OpenGl/src/Renderer/Renderer.cpp",
 				"C:/Users/tildu/Documents/GitHub/OpenGl/src/Shader/Shader.cpp",
 				"C:/Users/tildu/Documents/GitHub/OpenGl/src/VertexArray/VertexArray.cpp",
