@@ -10,23 +10,26 @@
 class Renderer; // forward
 
 class Circle : public Object {
-public:
-    Circle(float radius, int res);
-    void render(const Renderer& r) const override; // exakt so!
+    public:
+        mutable bool         m_ready = false;
+        mutable VertexArray  m_va;
+        mutable VertexBuffer m_vb;
+        mutable unsigned int m_vertexCount = 0;
 
-    void setColor(float r,float g,float b,float a=1.0f){ m_Color={r,g,b,a}; }
+        int    m_Res;
+        float  m_Radius;
+        Shader m_shader;
+        std::array<float,4> m_Color{0,0,1,1};
+    
+    public:
+        Circle(float radius, int res);
+        void render(const Renderer& r) const override; // exakt so!
 
-public:
-    void ensureReady() const;
-    std::vector<float> createPositionVertices() const;
+        void setColor(float r,float g,float b,float a=1.0f){ m_Color={r,g,b,a}; }
 
-    mutable bool         m_ready = false;
-    mutable VertexArray  m_va;
-    mutable VertexBuffer m_vb;
-    mutable unsigned int m_vertexCount = 0;
+    public:
+        void ensureReady() const;
+        std::vector<float> createPositionVertices() const;
 
-    int    m_Res;
-    float  m_Radius;
-    Shader m_shader;
-    std::array<float,4> m_Color{0,0,1,1};
+        
 };

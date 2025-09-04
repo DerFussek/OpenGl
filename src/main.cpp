@@ -1,5 +1,7 @@
 #include <Windows.h>
 #include <filesystem>
+#include <iostream>
+#include <thread>
 
 #include "Engine/Engine.h"
 #include "Renderer/Renderer.h"
@@ -12,6 +14,14 @@
 #include "Objects/CircleWireFrame.h"
 
 Engine engine("Standart");
+
+int i=3;
+
+void readingTask() {
+    while(!engine.WindowShouldClose()) std::cin >> i;
+}
+
+
 
 int main() {
 
@@ -36,17 +46,18 @@ int main() {
     
     va.AddBuffer(buffer, layout);*/
     
-    //Circle Circle(0.5f, 3);
-    //Circle.setPosition({0.0f, 0.0f});
-
-    CircleWireFrame Circle(0.5f, 40);
+    Circle Circle(0.5f, 100);
     Circle.setPosition({0.0f, 0.0f});
     Circle.setColor(0.0f, 1.0f, 0.0f);
 
+    
+    std::thread t1(readingTask);    
+
     // --- Main loop --- //
     while(!engine.WindowShouldClose()) {
-        std::cin >> Circle.m_Res;
-
+        
+        
+        Circle.m_Res = i;
         renderer.Clear();
 
         // *** Rendering *** //
@@ -58,3 +69,6 @@ int main() {
 
     return 0;
 }
+
+
+
