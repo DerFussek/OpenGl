@@ -1,6 +1,6 @@
-^C:\USERS\TILDU\DOCUMENTS\GITHUB\OPENGL\CMAKELISTS.TXT
+^C:\USERS\TILDU\DESKTOP\CODE\OPENGL\CMAKELISTS.TXT
 setlocal
-"C:\Program Files\cmake-4.1.0-windows-x86_64\bin\cmake.exe" -SC:/Users/tildu/Documents/GitHub/OpenGl -BC:/Users/tildu/Documents/GitHub/OpenGl/build --check-stamp-file C:/Users/tildu/Documents/GitHub/OpenGl/build/CMakeFiles/generate.stamp
+"C:\Program Files\cmake-4.1.0-windows-x86_64\bin\cmake.exe" -SC:/Users/tildu/Desktop/Code/OpenGl -BC:/Users/tildu/Desktop/Code/OpenGl/build --check-stamp-file C:/Users/tildu/Desktop/Code/OpenGl/build/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone

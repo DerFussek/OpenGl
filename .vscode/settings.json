@@ -52,6 +52,7 @@
         "xtr1common": "cpp",
         "xutility": "cpp",
         "vector": "cpp",
+<<<<<<< HEAD
         "algorithm": "cpp",
         "chrono": "cpp",
         "filesystem": "cpp",
@@ -59,5 +60,9 @@
         "iomanip": "cpp",
         "optional": "cpp",
         "ratio": "cpp"
+=======
+        "cerrno": "cpp",
+        "array": "cpp"
+>>>>>>> ef656056668d5939283e255393c4a60a6a29b819
     }
 }
