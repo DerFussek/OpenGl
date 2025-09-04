@@ -449,6 +449,14 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="C:\Users\tildu\Documents\GitHub\OpenGl\src\Engine\Engine.cpp" />
+    <ClCompile Include="C:\Users\tildu\Documents\GitHub\OpenGl\src\IndexBuffer\IndexBuffer.cpp" />
+    <ClCompile Include="C:\Users\tildu\Documents\GitHub\OpenGl\src\Object\Object.cpp" />
+    <ClCompile Include="C:\Users\tildu\Documents\GitHub\OpenGl\src\Renderer\Renderer.cpp" />
+    <ClCompile Include="C:\Users\tildu\Documents\GitHub\OpenGl\src\Shader\Shader.cpp" />
+    <ClCompile Include="C:\Users\tildu\Documents\GitHub\OpenGl\src\VertexArray\VertexArray.cpp" />
+    <ClCompile Include="C:\Users\tildu\Documents\GitHub\OpenGl\src\VertexBuffer\VertexBuffer.cpp" />
+    <ClCompile Include="C:\Users\tildu\Documents\GitHub\OpenGl\src\VertexBuffer\VertexBufferLayout.cpp" />
     <ClCompile Include="C:\Users\tildu\Documents\GitHub\OpenGl\src\main.cpp" />
     <ClCompile Include="C:\Users\tildu\Documents\GitHub\OpenGl\src\glad.c" />
   </ItemGroup>

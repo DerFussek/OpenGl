@@ -14,6 +14,14 @@ endif()
 # SRC_CPP at CMakeLists.txt:9 (file)
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "C:/Users/tildu/Documents/GitHub/OpenGl/src/*.cpp")
 set(OLD_GLOB
+  "C:/Users/tildu/Documents/GitHub/OpenGl/src/Engine/Engine.cpp"
+  "C:/Users/tildu/Documents/GitHub/OpenGl/src/IndexBuffer/IndexBuffer.cpp"
+  "C:/Users/tildu/Documents/GitHub/OpenGl/src/Object/Object.cpp"
+  "C:/Users/tildu/Documents/GitHub/OpenGl/src/Renderer/Renderer.cpp"
+  "C:/Users/tildu/Documents/GitHub/OpenGl/src/Shader/Shader.cpp"
+  "C:/Users/tildu/Documents/GitHub/OpenGl/src/VertexArray/VertexArray.cpp"
+  "C:/Users/tildu/Documents/GitHub/OpenGl/src/VertexBuffer/VertexBuffer.cpp"
+  "C:/Users/tildu/Documents/GitHub/OpenGl/src/VertexBuffer/VertexBufferLayout.cpp"
   "C:/Users/tildu/Documents/GitHub/OpenGl/src/main.cpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
