@@ -4,8 +4,11 @@
 Engine::Engine(const std::string windowName) {
     try {
 
-        if(!glfwInit()) 
+        if(!glfwInit()) {
             throw std::runtime_error("Failed to initialize GLFW!");
+            std::abort();
+        }
+            
 
         glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
         glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
@@ -16,15 +19,25 @@ Engine::Engine(const std::string windowName) {
         if(!m_Window) {
             kill();
             throw std::runtime_error("Failed to create GLFW window!");
+            std::abort();
         }
 
         glfwMakeContextCurrent(m_Window);
 
-        if(!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress)) 
+        if(!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress)) {
             throw std::runtime_error("Failed to initialize Glad!");
+            std::abort();
+        }
 
         glViewport(0, 0, m_Width, m_Height);
         glClearColor(0.1f, 0.1f, 0.1f, 1.0f);
+
+        /*glEnable(GL_DEBUG_OUTPUT);
+        glDebugMessageCallback([](GLenum,GLenum,GLuint,GLenum,
+                                GLsizei,const char* msg,const void*){
+                std::cerr << "GL: " << msg << '\n';
+        }, nullptr);*/
+
 
     } catch (std::exception& e) {
         std::cerr << "Error: Caught Expression: " << e.what() << std::endl;

@@ -4,5 +4,7 @@ C:\Users\tildu\Documents\GitHub\OpenGl\src\buffers\IndexBuffer.cpp;C:\Users\tild
 C:\Users\tildu\Documents\GitHub\OpenGl\src\buffers\VertexArray.cpp;C:\Users\tildu\Documents\GitHub\OpenGl\build\OpenGl.dir\Debug\VertexArray.obj
 C:\Users\tildu\Documents\GitHub\OpenGl\src\buffers\VertexBuffer.cpp;C:\Users\tildu\Documents\GitHub\OpenGl\build\OpenGl.dir\Debug\VertexBuffer.obj
 C:\Users\tildu\Documents\GitHub\OpenGl\src\main.cpp;C:\Users\tildu\Documents\GitHub\OpenGl\build\OpenGl.dir\Debug\main.obj
+C:\Users\tildu\Documents\GitHub\OpenGl\src\objects\Ball\Ball.cpp;C:\Users\tildu\Documents\GitHub\OpenGl\build\OpenGl.dir\Debug\Ball.obj
+C:\Users\tildu\Documents\GitHub\OpenGl\src\render\Renderer.cpp;C:\Users\tildu\Documents\GitHub\OpenGl\build\OpenGl.dir\Debug\Renderer.obj
 C:\Users\tildu\Documents\GitHub\OpenGl\src\shader\Shader.cpp;C:\Users\tildu\Documents\GitHub\OpenGl\build\OpenGl.dir\Debug\Shader.obj
 C:\Users\tildu\Documents\GitHub\OpenGl\src\glad.c;C:\Users\tildu\Documents\GitHub\OpenGl\build\OpenGl.dir\Debug\glad.obj

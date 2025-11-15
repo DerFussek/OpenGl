@@ -9,8 +9,14 @@ class VertexBuffer {
         unsigned int m_Size;
 
     public:
+        VertexBuffer() = default;                                 // Standard­konstruktor
         VertexBuffer(const void* data, unsigned int size);
         ~VertexBuffer();
+
+        VertexBuffer(const VertexBuffer&)            = delete;
+        VertexBuffer& operator=(const VertexBuffer&) = delete;
+        VertexBuffer(VertexBuffer&& other) noexcept;
+        VertexBuffer& operator=(VertexBuffer&& other) noexcept;
 
         void Bind() const;
         void Unbind() const;

@@ -38,14 +38,78 @@ void Shader::Unbind() const {
 int Shader::GetUniformLocation(const std::string &name) const {
     int location = glGetUniformLocation(m_ID, name.c_str());
 
-    if(location == -1) std::cerr << "Warning: uniform '" << name << "' doesn't exist!" << std::endl;
+    if(location == -1) {
+        throw new std::runtime_error("Error in GetUniformLocation()");
+        std::cerr << "Warning: uniform '" << name << "' doesn't exist!" << std::endl; 
+    }
+
     return location;
 }
 
+void Shader::SetUniform1f(const std::string& name, float v0) const
+{
+    glUniform1f(GetUniformLocation(name), v0);
+}
 
-void Shader::SetUniform4f(const std::string &name, float v0, float v1, float v2, float v3) const {
+void Shader::SetUniform1i(const std::string& name, int v0) const
+{
+    glUniform1i(GetUniformLocation(name), v0);
+}
+
+void Shader::SetUniform1ui(const std::string& name, unsigned int v0) const
+{
+    glUniform1ui(GetUniformLocation(name), v0);
+}
+
+void Shader::SetUniform2f(const std::string& name, float v0, float v1) const
+{
+    glUniform2f(GetUniformLocation(name), v0, v1);
+}
+
+void Shader::SetUniform2i(const std::string& name, int v0, int v1) const
+{
+    glUniform2i(GetUniformLocation(name), v0, v1);
+}
+
+void Shader::SetUniform2ui(const std::string& name, unsigned int v0, unsigned int v1) const
+{
+    glUniform2ui(GetUniformLocation(name), v0, v1);
+}
+
+void Shader::SetUniform3f(const std::string& name, float v0, float v1, float v2) const
+{
+    glUniform3f(GetUniformLocation(name), v0, v1, v2);
+}
+
+void Shader::SetUniform3i(const std::string& name, int v0, int v1, int v2) const
+{
+    glUniform3i(GetUniformLocation(name), v0, v1, v2);
+}
+
+void Shader::SetUniform3ui(const std::string& name, unsigned int v0, unsigned int v1, unsigned int v2) const
+{
+    glUniform3ui(GetUniformLocation(name), v0, v1, v2);
+}
+
+void Shader::SetUniform4f(const std::string& name,
+                          float v0, float v1, float v2, float v3) const
+{
     glUniform4f(GetUniformLocation(name), v0, v1, v2, v3);
 }
+
+void Shader::SetUniform4i(const std::string& name,
+                          int v0, int v1, int v2, int v3) const
+{
+    glUniform4i(GetUniformLocation(name), v0, v1, v2, v3);
+}
+
+void Shader::SetUniform4ui(const std::string& name,
+                           unsigned int v0, unsigned int v1,
+                           unsigned int v2, unsigned int v3) const
+{
+    glUniform4ui(GetUniformLocation(name), v0, v1, v2, v3);
+}
+
 
 //--------------------------------------------------------------------------------------
 
@@ -73,6 +137,7 @@ ShaderProgramSource Shader::ParseShader(const std::string &filepath) const {
             }
         }
     } catch (std::exception &e) {
+        throw new std::runtime_error("Error in ParseShader()");
         std::cerr << "Error: An Exception while trying to read the shaderFile has occured! (" << e.what() << ")" << std::endl;
     }
 
@@ -143,4 +208,5 @@ void Shader::Create() {
 
     ShaderProgramSource src = ParseShader(m_Filepath);
     m_ID = CreateShader(src.VertexSource, src.FragmentSource);
+    if(m_ID == NULL) throw std::runtime_error("Error in Create()");
 }

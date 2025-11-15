@@ -5,7 +5,7 @@
 
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
-#include <glm/gtc/matrix_transform.hpp>
+//#include <glm/gtc/matrix_transform.hpp>
 
 
 #include "engine/Engine.h"
@@ -15,41 +15,36 @@
 #include "buffers/VertexBufferLayout.h"
 #include "buffers/IndexBuffer.h"
 #include "buffers/VertexArray.h"
-
 #include "shader/Shader.h"
+
+#include "render/Renderer.h"
+
+#include "objects/Ball/Ball.h"
 
 int main() {
     // --- Essentials --- //
     Engine engine("Standart");
     ErrorHandler errorhandler;
+    Renderer renderer;
+    Ball ball(0.0f, 0.0f, 0.1f);
 
-    // ---           --- //
-    float vertecies[] = {0.0f, 0.5f, -0.5f, -0.5f, 0.5f, -0.5f};
-    VertexBuffer vbo(vertecies, 3 * 2 * sizeof(float));
+    // ---     Test Abschnitt      --- //
     
-    VertexBufferLayout layout;
-    layout.Push<float>(2);
-
-    VertexArray vao;
-    
-    vao.AddBuffer(vbo, layout);
-
-    Shader shader("shaders/Basic.shader", true);
-    shader.Bind();
-    shader.SetUniform4f("u_Color", 0.5f, 0.2f, 0.9f, 1.0f);
 
     // --- Main loop --- //
     while(!engine.WindowShouldClose()) {
+        try {
+            
+            renderer.beginFrame( {0.1f, 0.1f, 0.12f, 1.0f} );
+            renderer.submit(&ball);
+            renderer.endFrame();
 
-        shader.Bind();
-        vbo.Bind();
-        vao.Bind();
+            engine.SwapBuffersAndPollEvents();
+            errorhandler.checkForErrors();
+        } catch (std::exception &e) {
+            std::cerr << "Exeption in the Main-Loop: " << e.what() << std::endl;
+        }
         
-        glDrawArrays(GL_TRIANGLES, 0, vbo.getCount());
-        
-        
-        engine.SwapBuffersAndPollEvents();
-        errorhandler.checkForErrors();
     }
    
     engine.kill();
