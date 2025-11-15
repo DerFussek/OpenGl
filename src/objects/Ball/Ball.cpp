@@ -33,9 +33,10 @@ void Ball::draw(Renderer&) const {
     shader.Bind();
     shader.SetUniform2f("u_Pos", px, py);
     shader.SetUniform1f("u_Radius", rad);
+    shader.SetUniform4f("u_Color", 0.2f, 0.8f, 0.2f, 1.0f);
 
     vao.Bind();
     ibo.Bind();
-
+    
     glDrawElements(GL_TRIANGLES, ibo.getCount(), GL_UNSIGNED_INT, nullptr);
 }

@@ -1,7 +1,9 @@
 #include <Windows.h>
 #include <filesystem>
 #include <iostream>
+
 #include <thread>
+#include <atomic>
 
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
@@ -34,17 +36,22 @@ int main() {
     // --- Main loop --- //
     while(!engine.WindowShouldClose()) {
         try {
+            /*static auto last = glfwGetTime();
+            auto now = glfwGetTime();
+            float dt = static_cast<float>(now - last);
+            last = now;
+            */
+            renderer.clearBackground({0.1f, 0.1f, 0.12f, 1.0f});
             
-            renderer.beginFrame( {0.1f, 0.1f, 0.12f, 1.0f} );
-            renderer.submit(&ball);
-            renderer.endFrame();
+            renderer.clearQueue();
+            renderer.addJob(&ball);
+            renderer.processQueue();
 
             engine.SwapBuffersAndPollEvents();
             errorhandler.checkForErrors();
         } catch (std::exception &e) {
             std::cerr << "Exeption in the Main-Loop: " << e.what() << std::endl;
         }
-        
     }
    
     engine.kill();

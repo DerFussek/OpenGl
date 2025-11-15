@@ -1,13 +1,19 @@
+#include "engine/Engine.h"
 #include "render/Renderer.h"
 #include <glad/glad.h>
 #include "buffers/VertexArray.h"
 #include "buffers/IndexBuffer.h"
 #include "shader/Shader.h"
+#include <vector>
+#include <thread>
+#include <atomic>
+#include <mutex>
 #include <iostream>
-#include <stdexcept>
-#include <cerrno>
+#include <exception>   // std::exception
+#include <algorithm>   // std::max
 
-void Renderer::clear(Color c) {
+
+void Renderer::clearBackground(Color c) {
     glClearColor(c.r, c.g, c.b, c.a);
     glClear(GL_COLOR_BUFFER_BIT);
 }
@@ -41,19 +47,18 @@ void Renderer::Draw(const VertexArray &vao,
     glDrawArrays(GL_TRIANGLES, 0, vbo.getCount());
 }
 
-void Renderer::beginFrame(Color clear) {
+void Renderer::clearQueue() {
     queue.clear();
-    this->clear(clear);
+    
 }
 
-void Renderer::submit(const Drawable* d) { queue.push_back(d); }
-void Renderer::endFrame() {
-    try {
-        for (auto* d : queue) d ->draw(*this);
-    } catch (std::exception &e) {
-        std::cerr << "Exception during Queuering: " << e.what() << std::endl; 
-    }
-    
+void Renderer::addJob(const Drawable* d) { queue.push_back(d); }
+void Renderer::processQueue() {
+    try { 
+        for (auto* d : queue) d ->draw(*this); 
+    } catch (std::exception &e) { 
+        std::cerr << "Exception during queue processing: " << e.what() << std::endl; 
+    } 
 }
 
 

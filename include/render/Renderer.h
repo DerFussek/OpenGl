@@ -16,7 +16,7 @@ class Drawable;
 class Renderer {
     private:
         std::vector<const Drawable*> queue;
-        static void clear(Color c);
+        
 
     public:
         
@@ -33,9 +33,11 @@ class Renderer {
         template<typename T>
         void Render(T &obj) const { obj.draw(); }
 
-        void beginFrame(Color clear);
-        void submit(const Drawable* d);
-        void endFrame();
+        static void clearBackground(Color c);
+        void clearQueue();
+        void addJob(const Drawable* d);
+        void processQueue();
+        
 };
 
 
