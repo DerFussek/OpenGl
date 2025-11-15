@@ -4,31 +4,22 @@
     <ClCompile Include="C:\Users\tildu\Documents\GitHub\OpenGl\src\Engine\Engine.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\tildu\Documents\GitHub\OpenGl\src\IndexBuffer\IndexBuffer.cpp">
+    <ClCompile Include="C:\Users\tildu\Documents\GitHub\OpenGl\src\Errors\ErrorHandler.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\tildu\Documents\GitHub\OpenGl\src\Object\Object.cpp">
+    <ClCompile Include="C:\Users\tildu\Documents\GitHub\OpenGl\src\buffers\IndexBuffer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\tildu\Documents\GitHub\OpenGl\src\Objects\Circle.cpp">
+    <ClCompile Include="C:\Users\tildu\Documents\GitHub\OpenGl\src\buffers\VertexArray.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\tildu\Documents\GitHub\OpenGl\src\Renderer\Renderer.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="C:\Users\tildu\Documents\GitHub\OpenGl\src\Shader\Shader.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="C:\Users\tildu\Documents\GitHub\OpenGl\src\VertexArray\VertexArray.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="C:\Users\tildu\Documents\GitHub\OpenGl\src\VertexBuffer\VertexBuffer.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="C:\Users\tildu\Documents\GitHub\OpenGl\src\VertexBuffer\VertexBufferLayout.cpp">
+    <ClCompile Include="C:\Users\tildu\Documents\GitHub\OpenGl\src\buffers\VertexBuffer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="C:\Users\tildu\Documents\GitHub\OpenGl\src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\tildu\Documents\GitHub\OpenGl\src\shader\Shader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="C:\Users\tildu\Documents\GitHub\OpenGl\src\glad.c">
