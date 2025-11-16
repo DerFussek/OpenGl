@@ -21,6 +21,8 @@ set(OLD_GLOB
   "C:/Users/tildu/Documents/GitHub/OpenGl/src/buffers/VertexBuffer.cpp"
   "C:/Users/tildu/Documents/GitHub/OpenGl/src/main.cpp"
   "C:/Users/tildu/Documents/GitHub/OpenGl/src/objects/Ball/Ball.cpp"
+  "C:/Users/tildu/Documents/GitHub/OpenGl/src/objects/shapes/Circle.cpp"
+  "C:/Users/tildu/Documents/GitHub/OpenGl/src/objects/shapes/Rect.cpp"
   "C:/Users/tildu/Documents/GitHub/OpenGl/src/render/Renderer.cpp"
   "C:/Users/tildu/Documents/GitHub/OpenGl/src/shader/Shader.cpp"
   )

@@ -456,6 +456,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClCompile Include="C:\Users\tildu\Documents\GitHub\OpenGl\src\buffers\VertexBuffer.cpp" />
     <ClCompile Include="C:\Users\tildu\Documents\GitHub\OpenGl\src\main.cpp" />
     <ClCompile Include="C:\Users\tildu\Documents\GitHub\OpenGl\src\objects\Ball\Ball.cpp" />
+    <ClCompile Include="C:\Users\tildu\Documents\GitHub\OpenGl\src\objects\shapes\Circle.cpp" />
+    <ClCompile Include="C:\Users\tildu\Documents\GitHub\OpenGl\src\objects\shapes\Rect.cpp" />
     <ClCompile Include="C:\Users\tildu\Documents\GitHub\OpenGl\src\render\Renderer.cpp" />
     <ClCompile Include="C:\Users\tildu\Documents\GitHub\OpenGl\src\shader\Shader.cpp" />
     <ClCompile Include="C:\Users\tildu\Documents\GitHub\OpenGl\src\glad.c" />

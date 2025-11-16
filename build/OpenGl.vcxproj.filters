@@ -22,6 +22,12 @@
     <ClCompile Include="C:\Users\tildu\Documents\GitHub\OpenGl\src\objects\Ball\Ball.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Users\tildu\Documents\GitHub\OpenGl\src\objects\shapes\Circle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\tildu\Documents\GitHub\OpenGl\src\objects\shapes\Rect.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="C:\Users\tildu\Documents\GitHub\OpenGl\src\render\Renderer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>

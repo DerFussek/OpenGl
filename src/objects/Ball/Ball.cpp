@@ -3,7 +3,7 @@
 
 Ball::Ball(float x, float y, float r)
     : px(x), py(y), rad(r),
-      shader("shaders/Ball.shader", true) {
+      shader("shaders/Shape.shader", true) {
     
     constexpr int seg = 32;
     float verts[(seg + 2) * 2];

@@ -12,5 +12,7 @@ class Ball final : public Drawable {
     
     public:
         Ball(float x, float y, float r);
+        ~Ball() = default;
+        
         void draw(Renderer& r) const override;
 };
