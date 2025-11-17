@@ -43,3 +43,8 @@ void Rect::draw(Renderer& r) const {
 
     glDrawArrays(GL_TRIANGLES, 0, vb.getCount());
 }
+
+void Rect::updateVertecies() {
+    std::vector<float> vertecies = createVertecies(m_Size);
+    vb.UpdateData(vertecies.data(), sizeof(float) * vertecies.size());
+}

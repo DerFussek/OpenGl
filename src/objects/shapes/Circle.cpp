@@ -6,18 +6,16 @@ Circle::Circle(std::array<float,2>position, std::array<float,4>color, float radi
     m_Color = color;
     m_Radius = radius;
 
-    constexpr int res = 32;
-
     std::vector<float>vertecies;
-    vertecies.reserve( (res + 2) * 2);
-    createVertecies(m_Radius, res, vertecies);
+    vertecies.reserve( (m_Res + 2) * 2);
+    createVertecies(m_Radius, m_Res, vertecies);
 
     vb = VertexBuffer(vertecies.data(), sizeof(float) * vertecies.size());
     layout.Push<float>(2);
     va.AddBuffer(vb, layout);
     
-    std::vector<unsigned int> idx(res * 3);
-    for(int i = 0; i < res; ++i) {
+    std::vector<unsigned int> idx(m_Res * 3);
+    for(int i = 0; i < m_Res; ++i) {
         idx[ i*3 ] = 0;
         idx[ i*3 + 1 ] = i + 1;
         idx[ i*3 + 2 ] = i + 2;
@@ -55,3 +53,21 @@ void Circle::draw(Renderer&) const {
     glDrawElements(GL_TRIANGLES, ib.getCount(), GL_UNSIGNED_INT, nullptr);
 }
 
+void Circle::updateVertecies() {
+    std::vector<float>vertecies;
+    vertecies.reserve( (m_Res + 2) * 2);
+    createVertecies(m_Radius, m_Res, vertecies);
+
+    vb.UpdateData(vertecies.data(), sizeof(float) * vertecies.size());
+    //layout.Push<float>(2);
+    //va.AddBuffer(vb, layout);
+    
+    std::vector<unsigned int> idx(m_Res * 3);
+    for(int i = 0; i < m_Res; ++i) {
+        idx[ i*3 ] = 0;
+        idx[ i*3 + 1 ] = i + 1;
+        idx[ i*3 + 2 ] = i + 2;
+    }
+
+    ib.UpdateData(idx.data(), idx.size());
+}

@@ -25,6 +25,22 @@
 #include "objects/shapes/Circle.h"
 #include "objects/shapes/Rect.h"
 
+void readRes(float &out, float &out2) {
+    std::string in;
+    std::string in2;
+    std::cin >> in;
+    std::cin >> in2;
+    try {
+         out = stof(in);
+         out2 = stof(in2);
+    } catch (std::exception &e) {
+        std::cout << "Exception during Type Convertion: " << e.what() << std::endl;
+        out = 6;
+    }
+   
+}
+
+
 int main() {
     // --- Essentials --- //
     Engine engine("Standart");
@@ -45,6 +61,18 @@ int main() {
             float dt = static_cast<float>(now - last);
             last = now;
             */
+            float w = 0.1f;
+            float h = 0.1f;
+            auto t1 = std::thread(readRes, std::ref(w), std::ref(h));
+
+            if(t1.joinable()) {
+                t1.join();
+                rect.setSize({w, h});
+            }
+
+            
+            circle.updateVertecies();
+            rect.updateVertecies();
 
             renderer.clearBackground({0.1f, 0.1f, 0.12f, 1.0f});
             
@@ -60,6 +88,7 @@ int main() {
         }
     }
    
+    
     engine.kill();
     return 0;
 }
