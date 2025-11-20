@@ -56,19 +56,23 @@ int main() {
     while(!engine.WindowShouldClose()) {
         try {
             
-            /*static auto last = glfwGetTime();
+            static auto last = glfwGetTime();
             auto now = glfwGetTime();
             float dt = static_cast<float>(now - last);
             last = now;
-            */
+            
+            
             float w = 0.1f;
             float h = 0.1f;
+            
+            /*  
             auto t1 = std::thread(readRes, std::ref(w), std::ref(h));
 
             if(t1.joinable()) {
                 t1.join();
                 rect.setSize({w, h});
             }
+            */
 
             
             circle.updateVertecies();
