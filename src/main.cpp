@@ -25,19 +25,27 @@
 #include "objects/shapes/Circle.h"
 #include "objects/shapes/Rect.h"
 
-void readRes(float &out, float &out2) {
-    std::string in;
-    std::string in2;
-    std::cin >> in;
-    std::cin >> in2;
-    try {
-         out = stof(in);
-         out2 = stof(in2);
-    } catch (std::exception &e) {
-        std::cout << "Exception during Type Convertion: " << e.what() << std::endl;
-        out = 6;
-    }
-   
+std::atomic<float> g_w{0.1f};
+std::atomic<float> g_h{0.1f};
+std::atomic<bool> g_running{true};
+
+void readRes() {
+    
+    do {
+        std::string in;
+        std::string in2;
+        std::cin >> in;
+        std::cin >> in2;
+
+        try {
+            g_w.store(std::stof(in));
+            g_h.store(std::stof(in2));
+        } catch(std::exception &e) {
+            std::cerr << "Exception caught while type convertion: " << e.what() << std::endl;
+        }
+
+        std::this_thread::sleep_for(std::chrono::milliseconds(10));
+    } while(g_running.load());
 }
 
 
@@ -53,6 +61,8 @@ int main() {
     
 
     // --- Main loop --- //
+    std::thread t_read(readRes);
+
     while(!engine.WindowShouldClose()) {
         try {
             
@@ -62,19 +72,11 @@ int main() {
             last = now;
             
             
-            float w = 0.1f;
-            float h = 0.1f;
-            
-            /*  
-            auto t1 = std::thread(readRes, std::ref(w), std::ref(h));
+            float w = g_w.load();
+            float h = g_h.load();
 
-            if(t1.joinable()) {
-                t1.join();
-                rect.setSize({w, h});
-            }
-            */
+            rect.setSize( {w, h} );
 
-            
             circle.updateVertecies();
             rect.updateVertecies();
 
