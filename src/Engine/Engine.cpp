@@ -62,3 +62,14 @@ void Engine::kill()
 bool Engine::WindowShouldClose() {
     return glfwWindowShouldClose(this->m_Window);
 }
+
+std::array<float, 2> Engine::toPx(float x, float y) {
+            float ndx = x * 0.5f + 0.5f;
+            float ndy = y * 0.5f + 0.5f;
+
+            std::array<float, 2> px;
+            px[0] = ndx * this->m_Width;
+            px[1] = (1.0f - ndy) * this->m_Height;
+
+            return px;
+        }

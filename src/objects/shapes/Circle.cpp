@@ -1,13 +1,12 @@
 #include "objects/shapes/Circle.h"
 
-Circle::Circle(std::array<float,2>position, std::array<float,4>color, float radius)
-    : shader("shaders/Shape.shader", true) {
+Circle::Circle(const std::string& id, std::array<float,2>position, std::array<float,4>color, float radius)
+    : shader("shaders/Shape.shader", true), ObjectBase(id) {
     m_Pos = position;
     m_Color = color;
     m_Radius = radius;
 
     std::vector<float>vertecies;
-    vertecies.reserve( (m_Res + 2) * 2);
     createVertecies(m_Radius, m_Res, vertecies);
 
     vb = VertexBuffer(vertecies.data(), sizeof(float) * vertecies.size());
@@ -28,7 +27,7 @@ void Circle::createVertecies(float radius, int res, std::vector<float> &vertecie
     vertecies.clear();
     vertecies.reserve((res + 2) * 2);
 
-    // Mittelpunkt
+    // Centerpoint
     vertecies.push_back(0.0f);
     vertecies.push_back(0.0f);
     
@@ -41,7 +40,7 @@ void Circle::createVertecies(float radius, int res, std::vector<float> &vertecie
 
 
 
-void Circle::draw(Renderer&) const {
+void Circle::draw(Renderer&) const {    
     shader.Bind();
     shader.SetUniform2f("u_Pos", m_Pos[0], m_Pos[1]);
     shader.SetUniform1f("u_Radius", m_Radius);

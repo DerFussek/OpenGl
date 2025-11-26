@@ -1,16 +1,16 @@
 #pragma once
-#include <array>
-#include <vector>
 
+#include <vector>
+#include <array>
 #include "buffers/VertexBuffer.h"
 #include "buffers/VertexArray.h"
 #include "buffers/IndexBuffer.h"
-#include "shader/Shader.h"
 #include "buffers/VertexBufferLayout.h"
+#include "shader/Shader.h"
 #include "render/Renderer.h"
-#include "render/Drawable.h"
+#include "objects/ObjectBase.h"
 
-class Circle : public Drawable {
+class Circle final : public ObjectBase {
     private:
         VertexBuffer vb;
         VertexBufferLayout layout;
@@ -26,7 +26,7 @@ class Circle : public Drawable {
         int m_Res = 32;
 
     public:
-        Circle(std::array<float,2>position, std::array<float,4>color, float radius);
+        Circle(const std::string& id, std::array<float,2>position, std::array<float,4>color, float radius);
         ~Circle() = default;
 
        
@@ -42,5 +42,4 @@ class Circle : public Drawable {
 
         const inline std::array<float, 4>getColor() { return m_Color; }
         inline void setColor(std::array<float, 4>color) { m_Color = color; }
-
 };

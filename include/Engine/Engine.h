@@ -2,6 +2,7 @@
 
 #include <iostream>
 #include <string>
+#include <array>
 #include <cerrno>
 #include <stdexcept>
 
@@ -21,5 +22,11 @@ class Engine {
         bool WindowShouldClose();
         void SwapBuffersAndPollEvents();
         void kill();
+       
         
+        std::array<float, 2> toPx(float x, float y);
+
+
+        inline int getWidth() const { return m_Width; }
+        inline int getHeight() const { return m_Height; }
 };

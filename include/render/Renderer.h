@@ -37,6 +37,8 @@ class Renderer {
         void clearQueue();
         void addJob(const Drawable* d);
         void processQueue();
+
+        inline Renderer* This() { return this; }
         
 };
 

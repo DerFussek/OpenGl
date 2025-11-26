@@ -1,4 +1,5 @@
 #pragma once
+#pragma once
 #include <array>
 #include <vector>
 
@@ -8,9 +9,10 @@
 #include "shader/Shader.h"
 #include "buffers/VertexBufferLayout.h"
 #include "render/Renderer.h"
-#include "render/Drawable.h"
+#include "objects/ObjectBase.h"
 
-class Rect final : public Drawable {
+
+class Rect final : public ObjectBase {
     private:
         VertexBuffer vb;
         VertexBufferLayout layout;
@@ -24,7 +26,7 @@ class Rect final : public Drawable {
         std::array<float, 2> m_Size;
 
     public:
-        Rect(std::array<float, 2>pos, std::array<float, 4>color, std::array<float, 2>size);
+        Rect(std::string& id, std::array<float, 2>pos, std::array<float, 4>color, std::array<float, 2>size);
         ~Rect() = default;
 
         void draw(Renderer& r) const override;
@@ -39,4 +41,5 @@ class Rect final : public Drawable {
 
         const inline std::array<float, 4>getColor() { return m_Color; }
         inline void setColor(std::array<float, 4>color) { m_Color = color; }
+
 };

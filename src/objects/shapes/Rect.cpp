@@ -1,7 +1,8 @@
 #include "objects/shapes/Rect.h"
+#include "render/Drawable.h"
 
-Rect::Rect(std::array<float, 2>pos, std::array<float, 4>color, std::array<float, 2>size) 
-    : shader("shaders/Basic.shader", true) {
+Rect::Rect(std::string& id, std::array<float, 2>pos, std::array<float, 4>color, std::array<float, 2>size) 
+    : shader("shaders/Basic.shader", true), ObjectBase(id) {
     
     m_Pos = pos;
     m_Color = color;

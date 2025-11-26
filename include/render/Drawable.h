@@ -10,6 +10,7 @@ class Renderer;
 
 class Drawable {
     public:
+        
         virtual void draw(Renderer& r) const = 0;
         virtual ~Drawable() = default;
 };

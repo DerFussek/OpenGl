@@ -1,68 +1,122 @@
+// ## OS ## 
 #include <Windows.h>
 #include <filesystem>
-#include <iostream>
+#include <iostream>  
 
+// ## Threading ##
 #include <thread>
 #include <atomic>
 
+// ## OpenGL ##
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
-//#include <glm/gtc/matrix_transform.hpp>
+//#include <glm/gtc/matrix_transform.hpp> // 3D Matrices --> not implemented yet
 
+
+// ## Own Lib's ##
+// ** Engine **
 #include "engine/Engine.h"
 #include "errors/ErrorHandler.h"
 
+// ** Buffers ** 
 #include "buffers/VertexBuffer.h"
 #include "buffers/VertexBufferLayout.h"
 #include "buffers/IndexBuffer.h"
 #include "buffers/VertexArray.h"
 #include "shader/Shader.h"
 
+// ** Rendering ** 
 #include "render/Drawable.h"
 #include "render/Renderer.h"
 
+// ** Objects ** 
 #include "objects/Ball/Ball.h"
 #include "objects/shapes/Circle.h"
 #include "objects/shapes/Rect.h"
+#include "objects/ObjectManager.h"
 
-std::atomic<float> g_w{0.1f};
-std::atomic<float> g_h{0.1f};
-std::atomic<bool> g_running{true};
 
-void readRes() {
-    
-    do {
-        std::string in;
-        std::string in2;
-        std::cin >> in;
-        std::cin >> in2;
+// ## Global Vars and Functions ##
+std::atomic<float> g_w{0.1f};       // Test vars for
+std::atomic<float> g_h{0.1f};       // for threaded 
+std::atomic<bool> g_running{true};  // user imput
 
-        try {
-            g_w.store(std::stof(in));
-            g_h.store(std::stof(in2));
-        } catch(std::exception &e) {
-            std::cerr << "Exception caught while type convertion: " << e.what() << std::endl;
+
+#define ReadThreadSleepTime 10
+void readResWin() {
+    HANDLE event = GetStdHandle(STD_INPUT_HANDLE);
+    if(event == INVALID_HANDLE_VALUE) return;
+
+    std::string buffer;
+    std::cout << "> " << std::flush;
+
+    while(g_running.load()) {
+        DWORD numEvents = 0;
+
+        if(!GetNumberOfConsoleInputEvents(event, &numEvents)) { // Fehler 
+            std::this_thread::sleep_for(std::chrono::milliseconds(ReadThreadSleepTime));
+            continue;
         }
 
-        std::this_thread::sleep_for(std::chrono::milliseconds(10));
-    } while(g_running.load());
+        if(numEvents == 0) {    // keine Events
+            std::this_thread::sleep_for(std::chrono::milliseconds(ReadThreadSleepTime));
+            continue;
+        }
+
+        INPUT_RECORD rec;
+        DWORD read = 0;
+        if(!ReadConsoleInputA(event, &rec, 1, &read) || read == 0) continue;
+        if(rec.EventType != KEY_EVENT) continue;
+
+        KEY_EVENT_RECORD& key = rec.Event.KeyEvent;
+        if(!key.bKeyDown) continue;
+        char ch = key.uChar.AsciiChar;
+
+        if(ch == '\r') {
+            std::cout << '\n';
+
+            try {
+                std::istringstream iss(buffer);
+                float w, h;
+
+                if(iss >> w >> h) {
+                    g_w.store(w);
+                    g_h.store(h);
+                    std::cout << "Neue Wete: w=" << w << " h=" << h << "\n";
+                } else {
+                    std::cout << "Eingabe-Format: <w> <h>\n";
+                }
+            } catch(std::exception &e) {
+                std::cerr << "Parse-Fehler: " << e.what() << "\n";
+            }
+
+            buffer.clear();
+            std::cout << "> " << std::flush;
+        } else if(ch == '\b') {
+            if(!buffer.empty()) buffer.pop_back();
+        } else if(ch >= 32 && ch < 127) {
+            buffer.push_back(ch);
+            std::cout << ch << std::flush;
+        }
+    }
 }
 
 
+// ## Main Function ## 
 int main() {
     // --- Essentials --- //
     Engine engine("Standart");
     ErrorHandler errorhandler;
     Renderer renderer;
+    ObjectManager manager;
 
-    Circle circle({0.5f, 0.0f}, {0.1f, 0.2f, 0.9f, 1.0f}, 0.5f);
-    Rect rect({-0.5f, 0.0f}, {0.1f, 0.8f, 0.2f, 1.0f}, {0.25f, 0.5f});
     // ---     Test Abschnitt      --- //
+    Circle* circle = manager.CreateCircle({0.0f, 0.0f}, {0.2f, 0.9f, 0.9f, 1.0f}, 0.2f);
+    Rect* rect = manager.CreateRect({-0.5f, 0.0f}, {0.8f, 0.0f, 0.9f, 1.0f}, {0.25f, 0.5f});
     
 
     // --- Main loop --- //
-    std::thread t_read(readRes);
-
+    std::thread t_read(readResWin);
     while(!engine.WindowShouldClose()) {
         try {
             
@@ -70,21 +124,23 @@ int main() {
             auto now = glfwGetTime();
             float dt = static_cast<float>(now - last);
             last = now;
-            
-            
+           
             float w = g_w.load();
             float h = g_h.load();
 
-            rect.setSize( {w, h} );
+            rect->setSize( {w, h} );
+            rect->updateVertecies();
 
-            circle.updateVertecies();
-            rect.updateVertecies();
+            //circle.setResulution((int)h);
+            //circle.updateVertecies();
+            
 
             renderer.clearBackground({0.1f, 0.1f, 0.12f, 1.0f});
-            
             renderer.clearQueue();
-            renderer.addJob(&rect);
-            renderer.addJob(&circle);
+            
+            renderer.addJob(rect);
+            renderer.addJob(circle);
+            
             renderer.processQueue();
 
             engine.SwapBuffersAndPollEvents();
@@ -94,6 +150,8 @@ int main() {
         }
     }
    
+    g_running.store(false);
+    if(t_read.joinable()) t_read.join();
     
     engine.kill();
     return 0;
