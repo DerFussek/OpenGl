@@ -1,4 +1,4 @@
-#include "objects/shapes/Circle.h"
+#include "physics_engine/objects/shapes/Circle.h"
 
 Circle::Circle(const std::string& id, std::array<float,2>position, std::array<float,4>color, float radius)
     : shader("shaders/Shape.shader", true), ObjectBase(id) {

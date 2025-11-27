@@ -1,7 +1,7 @@
 #pragma once
 
-#include "buffers/VertexBuffer.h"
-#include "buffers/VertexBufferLayout.h"
+#include "physics_engine/buffers/VertexBuffer.h"
+#include "physics_engine/buffers/VertexBufferLayout.h"
 
 class VertexArray {
     private:

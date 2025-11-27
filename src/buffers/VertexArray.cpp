@@ -1,4 +1,4 @@
-#include "buffers/VertexArray.h"
+#include "physics_engine/buffers/VertexArray.h"
 
 VertexArray::VertexArray() {
     glGenVertexArrays(1, &m_ID);

@@ -6072,3 +6072,583 @@ events:
         - "C:/Program Files/OpenGlProject"
       CMAKE_FIND_ROOT_PATH: "C:/vcpkg/installed/x64-windows/debug;C:/vcpkg/installed/x64-windows"
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/cmake-4.1.0-windows-x86_64/share/cmake-4.1/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "C:/Program Files/cmake-4.1.0-windows-x86_64/share/cmake-4.1/Modules/CheckCXXSourceCompiles.cmake:103 (cmake_check_source_compiles)"
+      - "C:/Program Files/cmake-4.1.0-windows-x86_64/share/cmake-4.1/Modules/FindThreads.cmake:99 (check_cxx_source_compiles)"
+      - "C:/Program Files/cmake-4.1.0-windows-x86_64/share/cmake-4.1/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "C:/vcpkg/scripts/buildsystems/vcpkg.cmake:896 (_find_package)"
+      - "C:/Program Files/cmake-4.1.0-windows-x86_64/share/cmake-4.1/Modules/CMakeFindDependencyMacro.cmake:78 (find_package)"
+      - "C:/vcpkg/installed/x64-windows/share/glfw3/glfw3Config.cmake:2 (find_dependency)"
+      - "C:/vcpkg/scripts/buildsystems/vcpkg.cmake:896 (_find_package)"
+      - "CMakeLists.txt:32 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "C:/Users/tildu/Documents/GitHub/OpenGl/build/CMakeFiles/CMakeScratch/TryCompile-pssnkn"
+      binary: "C:/Users/tildu/Documents/GitHub/OpenGl/build/CMakeFiles/CMakeScratch/TryCompile-pssnkn"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      VCPKG_INSTALLED_DIR: "C:/vcpkg/installed"
+      VCPKG_PREFER_SYSTEM_LIBS: "OFF"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "C:/vcpkg"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/tildu/Documents/GitHub/OpenGl/build/CMakeFiles/CMakeScratch/TryCompile-pssnkn'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_9d607.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild-Version 17.13.19+0d9f5a35a f├╝r .NET Framework
+        Der Buildvorgang wurde am 27.11.2025 01:28:24 gestartet.
+        
+        Projekt "C:\\Users\\tildu\\Documents\\GitHub\\OpenGl\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pssnkn\\cmTC_9d607.vcxproj" auf Knoten "1" (Standardziele).
+        PrepareForBuild:
+          Das Verzeichnis "cmTC_9d607.dir\\Debug\\" wird erstellt.
+          Die strukturierte Ausgabe ist aktiviert. Die Formatierung der Compilerdiagnose spiegelt die Fehlerhierarchie wider. Weitere Informationen finden Sie unter https://aka.ms/cpp/structured-output.
+          Das Verzeichnis "C:\\Users\\tildu\\Documents\\GitHub\\OpenGl\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pssnkn\\Debug\\" wird erstellt.
+          Das Verzeichnis "cmTC_9d607.dir\\Debug\\cmTC_9d607.tlog\\" wird erstellt.
+        InitializeBuildStatus:
+          "cmTC_9d607.dir\\Debug\\cmTC_9d607.tlog\\unsuccessfulbuild" wird erstellt, da "AlwaysCreate" angegeben wurde.
+          Aktualisieren des Timestamps von "cmTC_9d607.dir\\Debug\\cmTC_9d607.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /Fo"cmTC_9d607.dir\\Debug\\\\" /Fd"cmTC_9d607.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Users\\tildu\\Documents\\GitHub\\OpenGl\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pssnkn\\src.cxx"
+          Microsoft (R) C/C++-Optimierungscompiler Version 19.43.34810 f├╝r x64
+          Copyright (C) Microsoft Corporation. Alle Rechte vorbehalten.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /Fo"cmTC_9d607.dir\\Debug\\\\" /Fd"cmTC_9d607.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Users\\tildu\\Documents\\GitHub\\OpenGl\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pssnkn\\src.cxx"
+          src.cxx
+        C:\\Users\\tildu\\Documents\\GitHub\\OpenGl\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pssnkn\\src.cxx(1,10): error C1083: Datei (Include) kann nicht ge├Âffnet werden: "pthread.h": No such file or directory [C:\\Users\\tildu\\Documents\\GitHub\\OpenGl\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pssnkn\\cmTC_9d607.vcxproj]
+        Die Erstellung des Projekts "C:\\Users\\tildu\\Documents\\GitHub\\OpenGl\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pssnkn\\cmTC_9d607.vcxproj" ist abgeschlossen (Standardziele) -- FEHLER.
+        
+        Fehler beim Buildvorgang.
+        
+        "C:\\Users\\tildu\\Documents\\GitHub\\OpenGl\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pssnkn\\cmTC_9d607.vcxproj" (Standardziel) (1) ->
+        (ClCompile Ziel) -> 
+          C:\\Users\\tildu\\Documents\\GitHub\\OpenGl\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pssnkn\\src.cxx(1,10): error C1083: Datei (Include) kann nicht ge├Âffnet werden: "pthread.h": No such file or directory [C:\\Users\\tildu\\Documents\\GitHub\\OpenGl\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pssnkn\\cmTC_9d607.vcxproj]
+        
+            0 Warnung(en)
+            1 Fehler
+        
+        Verstrichene Zeit 00:00:00.33
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/cmake-4.1.0-windows-x86_64/share/cmake-4.1/Modules/CheckLibraryExists.cmake:154 (try_compile)"
+      - "C:/Program Files/cmake-4.1.0-windows-x86_64/share/cmake-4.1/Modules/FindThreads.cmake:112 (check_library_exists)"
+      - "C:/Program Files/cmake-4.1.0-windows-x86_64/share/cmake-4.1/Modules/FindThreads.cmake:175 (_threads_check_lib)"
+      - "C:/vcpkg/scripts/buildsystems/vcpkg.cmake:896 (_find_package)"
+      - "C:/Program Files/cmake-4.1.0-windows-x86_64/share/cmake-4.1/Modules/CMakeFindDependencyMacro.cmake:78 (find_package)"
+      - "C:/vcpkg/installed/x64-windows/share/glfw3/glfw3Config.cmake:2 (find_dependency)"
+      - "C:/vcpkg/scripts/buildsystems/vcpkg.cmake:896 (_find_package)"
+      - "CMakeLists.txt:32 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthreads"
+    directories:
+      source: "C:/Users/tildu/Documents/GitHub/OpenGl/build/CMakeFiles/CMakeScratch/TryCompile-jb7q6y"
+      binary: "C:/Users/tildu/Documents/GitHub/OpenGl/build/CMakeFiles/CMakeScratch/TryCompile-jb7q6y"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      VCPKG_INSTALLED_DIR: "C:/vcpkg/installed"
+      VCPKG_PREFER_SYSTEM_LIBS: "OFF"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "C:/vcpkg"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREADS_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/tildu/Documents/GitHub/OpenGl/build/CMakeFiles/CMakeScratch/TryCompile-jb7q6y'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_2bc62.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild-Version 17.13.19+0d9f5a35a f├╝r .NET Framework
+        Der Buildvorgang wurde am 27.11.2025 01:28:25 gestartet.
+        
+        Projekt "C:\\Users\\tildu\\Documents\\GitHub\\OpenGl\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jb7q6y\\cmTC_2bc62.vcxproj" auf Knoten "1" (Standardziele).
+        PrepareForBuild:
+          Das Verzeichnis "cmTC_2bc62.dir\\Debug\\" wird erstellt.
+          Die strukturierte Ausgabe ist aktiviert. Die Formatierung der Compilerdiagnose spiegelt die Fehlerhierarchie wider. Weitere Informationen finden Sie unter https://aka.ms/cpp/structured-output.
+          Das Verzeichnis "C:\\Users\\tildu\\Documents\\GitHub\\OpenGl\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jb7q6y\\Debug\\" wird erstellt.
+          Das Verzeichnis "cmTC_2bc62.dir\\Debug\\cmTC_2bc62.tlog\\" wird erstellt.
+        InitializeBuildStatus:
+          "cmTC_2bc62.dir\\Debug\\cmTC_2bc62.tlog\\unsuccessfulbuild" wird erstellt, da "AlwaysCreate" angegeben wurde.
+          Aktualisieren des Timestamps von "cmTC_2bc62.dir\\Debug\\cmTC_2bc62.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /Fo"cmTC_2bc62.dir\\Debug\\\\" /Fd"cmTC_2bc62.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Users\\tildu\\Documents\\GitHub\\OpenGl\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jb7q6y\\CheckFunctionExists.cxx"
+          Microsoft (R) C/C++-Optimierungscompiler Version 19.43.34810 f├╝r x64
+          Copyright (C) Microsoft Corporation. Alle Rechte vorbehalten.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /Fo"cmTC_2bc62.dir\\Debug\\\\" /Fd"cmTC_2bc62.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Users\\tildu\\Documents\\GitHub\\OpenGl\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jb7q6y\\CheckFunctionExists.cxx"
+          CheckFunctionExists.cxx
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\tildu\\Documents\\GitHub\\OpenGl\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jb7q6y\\Debug\\cmTC_2bc62.exe" /INCREMENTAL /ILK:"cmTC_2bc62.dir\\Debug\\cmTC_2bc62.ilk" /NOLOGO pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/tildu/Documents/GitHub/OpenGl/build/CMakeFiles/CMakeScratch/TryCompile-jb7q6y/Debug/cmTC_2bc62.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/tildu/Documents/GitHub/OpenGl/build/CMakeFiles/CMakeScratch/TryCompile-jb7q6y/Debug/cmTC_2bc62.lib" /MACHINE:X64  /machine:x64 cmTC_2bc62.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: Datei "pthreads.lib" kann nicht ge├Âffnet werden. [C:\\Users\\tildu\\Documents\\GitHub\\OpenGl\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jb7q6y\\cmTC_2bc62.vcxproj]
+        Die Erstellung des Projekts "C:\\Users\\tildu\\Documents\\GitHub\\OpenGl\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jb7q6y\\cmTC_2bc62.vcxproj" ist abgeschlossen (Standardziele) -- FEHLER.
+        
+        Fehler beim Buildvorgang.
+        
+        "C:\\Users\\tildu\\Documents\\GitHub\\OpenGl\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jb7q6y\\cmTC_2bc62.vcxproj" (Standardziel) (1) ->
+        (Link Ziel) -> 
+          LINK : fatal error LNK1104: Datei "pthreads.lib" kann nicht ge├Âffnet werden. [C:\\Users\\tildu\\Documents\\GitHub\\OpenGl\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jb7q6y\\cmTC_2bc62.vcxproj]
+        
+            0 Warnung(en)
+            1 Fehler
+        
+        Verstrichene Zeit 00:00:00.43
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/cmake-4.1.0-windows-x86_64/share/cmake-4.1/Modules/CheckLibraryExists.cmake:154 (try_compile)"
+      - "C:/Program Files/cmake-4.1.0-windows-x86_64/share/cmake-4.1/Modules/FindThreads.cmake:112 (check_library_exists)"
+      - "C:/Program Files/cmake-4.1.0-windows-x86_64/share/cmake-4.1/Modules/FindThreads.cmake:176 (_threads_check_lib)"
+      - "C:/vcpkg/scripts/buildsystems/vcpkg.cmake:896 (_find_package)"
+      - "C:/Program Files/cmake-4.1.0-windows-x86_64/share/cmake-4.1/Modules/CMakeFindDependencyMacro.cmake:78 (find_package)"
+      - "C:/vcpkg/installed/x64-windows/share/glfw3/glfw3Config.cmake:2 (find_dependency)"
+      - "C:/vcpkg/scripts/buildsystems/vcpkg.cmake:896 (_find_package)"
+      - "CMakeLists.txt:32 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthread"
+    directories:
+      source: "C:/Users/tildu/Documents/GitHub/OpenGl/build/CMakeFiles/CMakeScratch/TryCompile-fvvfcu"
+      binary: "C:/Users/tildu/Documents/GitHub/OpenGl/build/CMakeFiles/CMakeScratch/TryCompile-fvvfcu"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      VCPKG_INSTALLED_DIR: "C:/vcpkg/installed"
+      VCPKG_PREFER_SYSTEM_LIBS: "OFF"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "C:/vcpkg"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREAD_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/tildu/Documents/GitHub/OpenGl/build/CMakeFiles/CMakeScratch/TryCompile-fvvfcu'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_6dd27.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild-Version 17.13.19+0d9f5a35a f├╝r .NET Framework
+        Der Buildvorgang wurde am 27.11.2025 01:28:25 gestartet.
+        
+        Projekt "C:\\Users\\tildu\\Documents\\GitHub\\OpenGl\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fvvfcu\\cmTC_6dd27.vcxproj" auf Knoten "1" (Standardziele).
+        PrepareForBuild:
+          Das Verzeichnis "cmTC_6dd27.dir\\Debug\\" wird erstellt.
+          Die strukturierte Ausgabe ist aktiviert. Die Formatierung der Compilerdiagnose spiegelt die Fehlerhierarchie wider. Weitere Informationen finden Sie unter https://aka.ms/cpp/structured-output.
+          Das Verzeichnis "C:\\Users\\tildu\\Documents\\GitHub\\OpenGl\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fvvfcu\\Debug\\" wird erstellt.
+          Das Verzeichnis "cmTC_6dd27.dir\\Debug\\cmTC_6dd27.tlog\\" wird erstellt.
+        InitializeBuildStatus:
+          "cmTC_6dd27.dir\\Debug\\cmTC_6dd27.tlog\\unsuccessfulbuild" wird erstellt, da "AlwaysCreate" angegeben wurde.
+          Aktualisieren des Timestamps von "cmTC_6dd27.dir\\Debug\\cmTC_6dd27.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /Fo"cmTC_6dd27.dir\\Debug\\\\" /Fd"cmTC_6dd27.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Users\\tildu\\Documents\\GitHub\\OpenGl\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fvvfcu\\CheckFunctionExists.cxx"
+          Microsoft (R) C/C++-Optimierungscompiler Version 19.43.34810 f├╝r x64
+          Copyright (C) Microsoft Corporation. Alle Rechte vorbehalten.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /Fo"cmTC_6dd27.dir\\Debug\\\\" /Fd"cmTC_6dd27.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Users\\tildu\\Documents\\GitHub\\OpenGl\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fvvfcu\\CheckFunctionExists.cxx"
+          CheckFunctionExists.cxx
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\tildu\\Documents\\GitHub\\OpenGl\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fvvfcu\\Debug\\cmTC_6dd27.exe" /INCREMENTAL /ILK:"cmTC_6dd27.dir\\Debug\\cmTC_6dd27.ilk" /NOLOGO pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/tildu/Documents/GitHub/OpenGl/build/CMakeFiles/CMakeScratch/TryCompile-fvvfcu/Debug/cmTC_6dd27.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/tildu/Documents/GitHub/OpenGl/build/CMakeFiles/CMakeScratch/TryCompile-fvvfcu/Debug/cmTC_6dd27.lib" /MACHINE:X64  /machine:x64 cmTC_6dd27.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: Datei "pthread.lib" kann nicht ge├Âffnet werden. [C:\\Users\\tildu\\Documents\\GitHub\\OpenGl\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fvvfcu\\cmTC_6dd27.vcxproj]
+        Die Erstellung des Projekts "C:\\Users\\tildu\\Documents\\GitHub\\OpenGl\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fvvfcu\\cmTC_6dd27.vcxproj" ist abgeschlossen (Standardziele) -- FEHLER.
+        
+        Fehler beim Buildvorgang.
+        
+        "C:\\Users\\tildu\\Documents\\GitHub\\OpenGl\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fvvfcu\\cmTC_6dd27.vcxproj" (Standardziel) (1) ->
+        (Link Ziel) -> 
+          LINK : fatal error LNK1104: Datei "pthread.lib" kann nicht ge├Âffnet werden. [C:\\Users\\tildu\\Documents\\GitHub\\OpenGl\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fvvfcu\\cmTC_6dd27.vcxproj]
+        
+            0 Warnung(en)
+            1 Fehler
+        
+        Verstrichene Zeit 00:00:00.41
+        
+      exitCode: 1
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "C:/vcpkg/scripts/buildsystems/vcpkg.cmake:896 (_find_package)"
+      - "CMakeLists.txt:32 (find_package)"
+    name: "glfw3"
+    configs:
+      -
+        filename: "glfw3Config.cmake"
+        kind: "cmake"
+      -
+        filename: "glfw3-config.cmake"
+        kind: "cmake"
+    version_request:
+      exact: false
+    settings:
+      required: "required_explicit"
+      quiet: false
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      names:
+        - "glfw3"
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "C:/vcpkg/installed/x64-windows/glfw3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/vcpkg/installed/x64-windows/glfw3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+    found:
+      path: "C:/vcpkg/installed/x64-windows/share/glfw3/glfw3Config.cmake"
+      mode: "config"
+      version: "3.4.0"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "C:/vcpkg/installed/x64-windows"
+        - "C:/vcpkg/installed/x64-windows/debug"
+      ENV{PATH}:
+        - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
+        - "%SystemRoot%\\system32"
+        - "%SystemRoot%"
+        - "%SystemRoot%\\System32\\Wbem"
+        - "%SYSTEMROOT%\\System32\\WindowsPowerShell\\v1.0\\"
+        - "%SYSTEMROOT%\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA app\\NvDLISR"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Users\\tildu\\Downloads\\avrdude-v8.0-windows-x64\\avrdude.exe"
+        - "C:\\Program Files\\cmake-4.1.0-windows-x86_64\\bin"
+        - "C:\\Users\\tildu\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\tildu\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:\\Users\\tildu\\AppData\\Roaming\\npm"
+        - "E:\\Programme\\MinGW\\ucrt64\\bin"
+        - "C:\\Users\\tildu\\AppData\\Local\\GitHubDesktop\\bin"
+        - "E:\\Programme\\Arduino Universe\\arduino-cli_1.2.0_Windows_64bit"
+        - "C:\\Users\\tildu\\AppData\\Local\\Muse Hub\\lib"
+        - "C:\\Users\\tildu\\.dotnet\\tools"
+        - "C:\\Users\\tildu\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files/OpenGlProject"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/cmake-4.1.0-windows-x86_64"
+        - "C:/Program Files/OpenGlProject"
+      CMAKE_FIND_ROOT_PATH: "C:/vcpkg/installed/x64-windows;C:/vcpkg/installed/x64-windows/debug"
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "C:/vcpkg/scripts/buildsystems/vcpkg.cmake:896 (_find_package)"
+      - "CMakeLists.txt:33 (find_package)"
+    name: "glm"
+    configs:
+      -
+        filename: "glmConfig.cmake"
+        kind: "cmake"
+      -
+        filename: "glm-config.cmake"
+        kind: "cmake"
+    version_request:
+      exact: false
+    settings:
+      required: "required_explicit"
+      quiet: false
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      names:
+        - "glm"
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "C:/vcpkg/installed/x64-windows/glmConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/vcpkg/installed/x64-windows/glm-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/vcpkg/installed/x64-windows/debug/glmConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/vcpkg/installed/x64-windows/debug/glm-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/vcpkg/installed/x64-windows/debug/glmConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/vcpkg/installed/x64-windows/debug/glm-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/tildu/Documents/GitHub/OpenGl/build/CMakeFiles/pkgRedirects/glmConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/tildu/Documents/GitHub/OpenGl/build/CMakeFiles/pkgRedirects/glm-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/vcpkg/installed/x64-windows/glmConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/vcpkg/installed/x64-windows/glm-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/vcpkg/installed/x64-windows/debug/glmConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/vcpkg/installed/x64-windows/debug/glm-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Common Files/Oracle/Java/javapath/glmConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Common Files/Oracle/Java/javapath/glm-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/glmConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/glm-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/glmConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/glm-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/dotnet/glmConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/dotnet/glm-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/nodejs/glmConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/nodejs/glm-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR/glmConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR/glm-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Git/cmd/glmConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Git/cmd/glm-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Microsoft SQL Server/150/Tools/Binn/glmConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Microsoft SQL Server/150/Tools/Binn/glm-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/glmConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/glm-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/glmConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/glm-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/cmake-4.1.0-windows-x86_64/glmConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/cmake-4.1.0-windows-x86_64/glm-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/tildu/AppData/Local/Microsoft/WindowsApps/glmConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/tildu/AppData/Local/Microsoft/WindowsApps/glm-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/tildu/AppData/Local/Microsoft/WinGet/Packages/Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe/glmConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/tildu/AppData/Local/Microsoft/WinGet/Packages/Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe/glm-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/tildu/AppData/Roaming/npm/glmConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/tildu/AppData/Roaming/npm/glm-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "E:/Programme/MinGW/ucrt64/glmConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "E:/Programme/MinGW/ucrt64/glm-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/tildu/AppData/Local/GitHubDesktop/glmConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/tildu/AppData/Local/GitHubDesktop/glm-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "E:/Programme/Arduino Universe/arduino-cli_1.2.0_Windows_64bit/glmConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "E:/Programme/Arduino Universe/arduino-cli_1.2.0_Windows_64bit/glm-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/tildu/AppData/Local/Muse Hub/lib/glmConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/tildu/AppData/Local/Muse Hub/lib/glm-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/tildu/AppData/Local/Programs/Microsoft VS Code/glmConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/tildu/AppData/Local/Programs/Microsoft VS Code/glm-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/glmConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/glm-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/glmConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/glm-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+    found: null
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "C:/vcpkg/installed/x64-windows"
+        - "C:/vcpkg/installed/x64-windows/debug"
+      ENV{PATH}:
+        - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
+        - "%SystemRoot%\\system32"
+        - "%SystemRoot%"
+        - "%SystemRoot%\\System32\\Wbem"
+        - "%SYSTEMROOT%\\System32\\WindowsPowerShell\\v1.0\\"
+        - "%SYSTEMROOT%\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA app\\NvDLISR"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Users\\tildu\\Downloads\\avrdude-v8.0-windows-x64\\avrdude.exe"
+        - "C:\\Program Files\\cmake-4.1.0-windows-x86_64\\bin"
+        - "C:\\Users\\tildu\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\tildu\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:\\Users\\tildu\\AppData\\Roaming\\npm"
+        - "E:\\Programme\\MinGW\\ucrt64\\bin"
+        - "C:\\Users\\tildu\\AppData\\Local\\GitHubDesktop\\bin"
+        - "E:\\Programme\\Arduino Universe\\arduino-cli_1.2.0_Windows_64bit"
+        - "C:\\Users\\tildu\\AppData\\Local\\Muse Hub\\lib"
+        - "C:\\Users\\tildu\\.dotnet\\tools"
+        - "C:\\Users\\tildu\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files/OpenGlProject"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/cmake-4.1.0-windows-x86_64"
+        - "C:/Program Files/OpenGlProject"
+      CMAKE_FIND_ROOT_PATH: "C:/vcpkg/installed/x64-windows;C:/vcpkg/installed/x64-windows/debug"
+...

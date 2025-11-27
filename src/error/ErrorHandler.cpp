@@ -1,5 +1,4 @@
-#include "errors/ErrorHandler.h"
-
+#include "physics_engine/error/ErrorHandler.h"
 void ErrorHandler::clearErrors() {
     while(glGetError() != GL_NO_ERROR);
 }

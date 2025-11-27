@@ -1,5 +1,7 @@
-#include "objects/shapes/Rect.h"
-#include "render/Drawable.h"
+#include "physics_engine/objects/shapes/Rect.h"
+#include "physics_engine/render/Drawable.h"
+
+
 
 Rect::Rect(std::string& id, std::array<float, 2>pos, std::array<float, 4>color, std::array<float, 2>size) 
     : shader("shaders/Basic.shader", true), ObjectBase(id) {

@@ -8,8 +8,8 @@
 #include <sstream>
 #include <iomanip>
 
-#include "objects/shapes/Circle.h"
-#include "objects/shapes/Rect.h"
+#include "physics_engine/objects/shapes/Circle.h"
+#include "physics_engine/objects/shapes/Rect.h"
 
 struct IdGenerator {
     private:

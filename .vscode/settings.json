@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "vector": "cpp",
+        "thread": "cpp",
+        "sstream": "cpp",
+        "stdexcept": "cpp"
+    }
+}

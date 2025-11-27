@@ -1,9 +1,6 @@
-#include "engine/Engine.h"
-#include "render/Renderer.h"
-#include <glad/glad.h>
-#include "buffers/VertexArray.h"
-#include "buffers/IndexBuffer.h"
-#include "shader/Shader.h"
+
+#include "physics_engine/render/Renderer.h"
+
 #include <vector>
 #include <thread>
 #include <atomic>

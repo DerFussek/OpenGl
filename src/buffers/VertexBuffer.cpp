@@ -1,5 +1,5 @@
 // VertexBuffer.cpp
-#include "buffers/VertexBuffer.h"
+#include "physics_engine/buffers/VertexBuffer.h"
 
 VertexBuffer::VertexBuffer(const void* data, unsigned int size)
         : m_Size(size)

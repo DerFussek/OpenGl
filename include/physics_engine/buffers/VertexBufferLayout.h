@@ -2,8 +2,8 @@
 
 #include <vector>
 #include <type_traits>
-#include <glad/glad.h>
-#include <GLFW/glfw3.h>
+#include "glad/glad.h"
+#include "GLFW/glfw3.h"
 
 struct VertexBufferElement {
     unsigned int type;

@@ -1,13 +1,16 @@
 #pragma once
 #include <vector>
 
-#include "buffers/VertexBuffer.h"
-#include "buffers/VertexBufferLayout.h"
-#include "buffers/IndexBuffer.h"
-#include "buffers/VertexArray.h"
+#include <glad/glad.h>
+#include "physics_engine/core/Engine.h"
+#include "physics_engine/buffers/VertexBuffer.h"
+#include "physics_engine/buffers/VertexBufferLayout.h"
+#include "physics_engine/buffers/VertexArray.h"
+#include "physics_engine/buffers/IndexBuffer.h"
+#include "physics_engine/shader/Shader.h"
+#include "physics_engine/render/Drawable.h"
 
-#include "shader/Shader.h"
-#include "render/Drawable.h"
+
 
 struct Color {float r, g, b, a; };
 

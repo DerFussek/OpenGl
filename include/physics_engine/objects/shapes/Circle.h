@@ -2,13 +2,14 @@
 
 #include <vector>
 #include <array>
-#include "buffers/VertexBuffer.h"
-#include "buffers/VertexArray.h"
-#include "buffers/IndexBuffer.h"
-#include "buffers/VertexBufferLayout.h"
-#include "shader/Shader.h"
-#include "render/Renderer.h"
-#include "objects/ObjectBase.h"
+
+#include "physics_engine/buffers/VertexBuffer.h"
+#include "physics_engine/buffers/VertexBufferLayout.h"
+#include "physics_engine/buffers/VertexArray.h"
+#include "physics_engine/buffers/IndexBuffer.h"
+#include "physics_engine/shader/Shader.h"
+#include "physics_engine/render/Renderer.h"
+#include "physics_engine/objects/ObjectBase.h"
 
 class Circle final : public ObjectBase {
     private:
