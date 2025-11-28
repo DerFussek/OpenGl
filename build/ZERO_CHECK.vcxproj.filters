@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <CustomBuild Include="C:\Users\tildu\Documents\GitHub\OpenGl\Build\CMakeFiles\bb57b0bb5699d768570848c9825c7077\generate.stamp.rule">
+    <CustomBuild Include="C:\Users\Til\Documents\GitHub\OpenGl\build\CMakeFiles\d99d670e3eb55d6fd39d4bf51b577068\generate.stamp.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="CMake Rules">
-      <UniqueIdentifier>{9212EDF5-803D-39D9-B865-DD4E41075065}</UniqueIdentifier>
+      <UniqueIdentifier>{BBD1A6D0-BDD4-3493-818C-420A43F7346C}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

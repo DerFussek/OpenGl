@@ -1,5 +1,5 @@
-C:/Users/tildu/Documents/GitHub/OpenGl/Build/CMakeFiles/glad.dir
-C:/Users/tildu/Documents/GitHub/OpenGl/Build/CMakeFiles/physics_engine.dir
-C:/Users/tildu/Documents/GitHub/OpenGl/Build/CMakeFiles/physics_app.dir
-C:/Users/tildu/Documents/GitHub/OpenGl/Build/CMakeFiles/ALL_BUILD.dir
-C:/Users/tildu/Documents/GitHub/OpenGl/Build/CMakeFiles/ZERO_CHECK.dir
+C:/Users/Til/Documents/GitHub/OpenGl/build/CMakeFiles/glad.dir
+C:/Users/Til/Documents/GitHub/OpenGl/build/CMakeFiles/physics_engine.dir
+C:/Users/Til/Documents/GitHub/OpenGl/build/CMakeFiles/physics_app.dir
+C:/Users/Til/Documents/GitHub/OpenGl/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/Til/Documents/GitHub/OpenGl/build/CMakeFiles/ZERO_CHECK.dir

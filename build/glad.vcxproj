@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <PreferredToolArchitecture>x64</PreferredToolArchitecture>
   </PropertyGroup>
@@ -22,10 +22,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{D1961BA6-5691-3DED-BF63-06B3D6311F69}</ProjectGuid>
+    <ProjectGuid>{37A89156-8FC2-351C-8ADC-ABEC25CD8069}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <VcpkgEnabled>false</VcpkgEnabled>
-    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
     <Platform>x64</Platform>
     <ProjectName>glad</ProjectName>
     <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
@@ -34,57 +33,60 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v145</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v145</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v145</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v145</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
   </ImportGroup>
   <ImportGroup Label="PropertySheets">
-    <Import Project="do_not_import_user.props" Condition="exists('do_not_import_user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\tildu\Documents\GitHub\OpenGl\Build\Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Til\Documents\GitHub\OpenGl\build\Debug\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">glad.dir\Debug\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">glad</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\tildu\Documents\GitHub\OpenGl\Build\Release\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Til\Documents\GitHub\OpenGl\build\Release\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">glad.dir\Release\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">glad</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\tildu\Documents\GitHub\OpenGl\Build\MinSizeRel\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Til\Documents\GitHub\OpenGl\build\MinSizeRel\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">glad.dir\MinSizeRel\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">glad</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\tildu\Documents\GitHub\OpenGl\Build\RelWithDebInfo\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Til\Documents\GitHub\OpenGl\build\RelWithDebInfo\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">glad.dir\RelWithDebInfo\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">glad</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\tildu\Documents\GitHub\OpenGl\external\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Til\Documents\GitHub\OpenGl\external\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <ExceptionHandling>
       </ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
       <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
       <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
       <MinimalRebuild></MinimalRebuild>
@@ -101,10 +103,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\tildu\Documents\GitHub\OpenGl\external\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Til\Documents\GitHub\OpenGl\external\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\tildu\Documents\GitHub\OpenGl\external\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Til\Documents\GitHub\OpenGl\external\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -117,11 +119,14 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\tildu\Documents\GitHub\OpenGl\external\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Til\Documents\GitHub\OpenGl\external\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
       <ExceptionHandling>
       </ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
       <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
       <MinimalRebuild></MinimalRebuild>
@@ -140,10 +145,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\tildu\Documents\GitHub\OpenGl\external\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Til\Documents\GitHub\OpenGl\external\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\tildu\Documents\GitHub\OpenGl\external\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Til\Documents\GitHub\OpenGl\external\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -156,11 +161,14 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\tildu\Documents\GitHub\OpenGl\external\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Til\Documents\GitHub\OpenGl\external\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
       <ExceptionHandling>
       </ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
       <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
       <MinimalRebuild></MinimalRebuild>
@@ -179,10 +187,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\tildu\Documents\GitHub\OpenGl\external\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Til\Documents\GitHub\OpenGl\external\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\tildu\Documents\GitHub\OpenGl\external\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Til\Documents\GitHub\OpenGl\external\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -195,12 +203,15 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\tildu\Documents\GitHub\OpenGl\external\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Til\Documents\GitHub\OpenGl\external\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <ExceptionHandling>
       </ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
       <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
       <MinimalRebuild></MinimalRebuild>
@@ -217,10 +228,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\tildu\Documents\GitHub\OpenGl\external\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Til\Documents\GitHub\OpenGl\external\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\tildu\Documents\GitHub\OpenGl\external\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Til\Documents\GitHub\OpenGl\external\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -232,11 +243,11 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\tildu\Documents\GitHub\OpenGl\CMakeLists.txt">
+    <CustomBuild Include="C:\Users\Til\Documents\GitHub\OpenGl\CMakeLists.txt">
       <UseUtf8Encoding>Always</UseUtf8Encoding>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/tildu/Documents/GitHub/OpenGl/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/Til/Documents/GitHub/OpenGl/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files\cmake-4.1.0-windows-x86_64\bin\cmake.exe" -SC:/Users/tildu/Documents/GitHub/OpenGl -BC:/Users/tildu/Documents/GitHub/OpenGl/Build --check-stamp-file C:/Users/tildu/Documents/GitHub/OpenGl/Build/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Til/Documents/GitHub/OpenGl -BC:/Users/Til/Documents/GitHub/OpenGl/build --check-stamp-file C:/Users/Til/Documents/GitHub/OpenGl/build/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -244,12 +255,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\CMakeCInformation.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\CMakeCXXInformation.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\CMakeDependentOption.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\CMakeGenericSystem.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\CMakeLanguageInformation.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\CMakeRCInformation.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\Compiler\MSVC-C.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\Compiler\MSVC.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\Linker\MSVC-C.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\Linker\MSVC-CXX.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\Linker\MSVC.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\Platform\Windows.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\Platform\WindowsPaths.cmake;C:\Users\tildu\Documents\GitHub\OpenGl\Build\CMakeFiles\4.1.0\CMakeCCompiler.cmake;C:\Users\tildu\Documents\GitHub\OpenGl\Build\CMakeFiles\4.1.0\CMakeCXXCompiler.cmake;C:\Users\tildu\Documents\GitHub\OpenGl\Build\CMakeFiles\4.1.0\CMakeRCCompiler.cmake;C:\Users\tildu\Documents\GitHub\OpenGl\Build\CMakeFiles\4.1.0\CMakeSystem.cmake;C:\Users\tildu\Documents\GitHub\OpenGl\Build\CMakeFiles\cmake.verify_globs;C:\vcpkg\scripts\buildsystems\vcpkg.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\tildu\Documents\GitHub\OpenGl\Build\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Linker\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Linker\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\WindowsPaths.cmake;C:\Users\Til\Documents\GitHub\OpenGl\build\CMakeFiles\4.2.0\CMakeCCompiler.cmake;C:\Users\Til\Documents\GitHub\OpenGl\build\CMakeFiles\4.2.0\CMakeCXXCompiler.cmake;C:\Users\Til\Documents\GitHub\OpenGl\build\CMakeFiles\4.2.0\CMakeRCCompiler.cmake;C:\Users\Til\Documents\GitHub\OpenGl\build\CMakeFiles\4.2.0\CMakeSystem.cmake;C:\Users\Til\Documents\GitHub\OpenGl\build\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Til\Documents\GitHub\OpenGl\build\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/tildu/Documents/GitHub/OpenGl/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/Til/Documents/GitHub/OpenGl/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files\cmake-4.1.0-windows-x86_64\bin\cmake.exe" -SC:/Users/tildu/Documents/GitHub/OpenGl -BC:/Users/tildu/Documents/GitHub/OpenGl/Build --check-stamp-file C:/Users/tildu/Documents/GitHub/OpenGl/Build/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Til/Documents/GitHub/OpenGl -BC:/Users/Til/Documents/GitHub/OpenGl/build --check-stamp-file C:/Users/Til/Documents/GitHub/OpenGl/build/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -257,12 +268,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\CMakeCInformation.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\CMakeCXXInformation.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\CMakeDependentOption.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\CMakeGenericSystem.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\CMakeLanguageInformation.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\CMakeRCInformation.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\Compiler\MSVC-C.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\Compiler\MSVC.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\Linker\MSVC-C.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\Linker\MSVC-CXX.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\Linker\MSVC.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\Platform\Windows.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\Platform\WindowsPaths.cmake;C:\Users\tildu\Documents\GitHub\OpenGl\Build\CMakeFiles\4.1.0\CMakeCCompiler.cmake;C:\Users\tildu\Documents\GitHub\OpenGl\Build\CMakeFiles\4.1.0\CMakeCXXCompiler.cmake;C:\Users\tildu\Documents\GitHub\OpenGl\Build\CMakeFiles\4.1.0\CMakeRCCompiler.cmake;C:\Users\tildu\Documents\GitHub\OpenGl\Build\CMakeFiles\4.1.0\CMakeSystem.cmake;C:\Users\tildu\Documents\GitHub\OpenGl\Build\CMakeFiles\cmake.verify_globs;C:\vcpkg\scripts\buildsystems\vcpkg.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\tildu\Documents\GitHub\OpenGl\Build\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Linker\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Linker\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\WindowsPaths.cmake;C:\Users\Til\Documents\GitHub\OpenGl\build\CMakeFiles\4.2.0\CMakeCCompiler.cmake;C:\Users\Til\Documents\GitHub\OpenGl\build\CMakeFiles\4.2.0\CMakeCXXCompiler.cmake;C:\Users\Til\Documents\GitHub\OpenGl\build\CMakeFiles\4.2.0\CMakeRCCompiler.cmake;C:\Users\Til\Documents\GitHub\OpenGl\build\CMakeFiles\4.2.0\CMakeSystem.cmake;C:\Users\Til\Documents\GitHub\OpenGl\build\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Til\Documents\GitHub\OpenGl\build\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/tildu/Documents/GitHub/OpenGl/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/Til/Documents/GitHub/OpenGl/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-"C:\Program Files\cmake-4.1.0-windows-x86_64\bin\cmake.exe" -SC:/Users/tildu/Documents/GitHub/OpenGl -BC:/Users/tildu/Documents/GitHub/OpenGl/Build --check-stamp-file C:/Users/tildu/Documents/GitHub/OpenGl/Build/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Til/Documents/GitHub/OpenGl -BC:/Users/Til/Documents/GitHub/OpenGl/build --check-stamp-file C:/Users/Til/Documents/GitHub/OpenGl/build/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -270,12 +281,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\CMakeCInformation.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\CMakeCXXInformation.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\CMakeDependentOption.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\CMakeGenericSystem.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\CMakeLanguageInformation.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\CMakeRCInformation.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\Compiler\MSVC-C.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\Compiler\MSVC.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\Linker\MSVC-C.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\Linker\MSVC-CXX.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\Linker\MSVC.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\Platform\Windows.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\Platform\WindowsPaths.cmake;C:\Users\tildu\Documents\GitHub\OpenGl\Build\CMakeFiles\4.1.0\CMakeCCompiler.cmake;C:\Users\tildu\Documents\GitHub\OpenGl\Build\CMakeFiles\4.1.0\CMakeCXXCompiler.cmake;C:\Users\tildu\Documents\GitHub\OpenGl\Build\CMakeFiles\4.1.0\CMakeRCCompiler.cmake;C:\Users\tildu\Documents\GitHub\OpenGl\Build\CMakeFiles\4.1.0\CMakeSystem.cmake;C:\Users\tildu\Documents\GitHub\OpenGl\Build\CMakeFiles\cmake.verify_globs;C:\vcpkg\scripts\buildsystems\vcpkg.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\tildu\Documents\GitHub\OpenGl\Build\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Linker\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Linker\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\WindowsPaths.cmake;C:\Users\Til\Documents\GitHub\OpenGl\build\CMakeFiles\4.2.0\CMakeCCompiler.cmake;C:\Users\Til\Documents\GitHub\OpenGl\build\CMakeFiles\4.2.0\CMakeCXXCompiler.cmake;C:\Users\Til\Documents\GitHub\OpenGl\build\CMakeFiles\4.2.0\CMakeRCCompiler.cmake;C:\Users\Til\Documents\GitHub\OpenGl\build\CMakeFiles\4.2.0\CMakeSystem.cmake;C:\Users\Til\Documents\GitHub\OpenGl\build\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Til\Documents\GitHub\OpenGl\build\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/tildu/Documents/GitHub/OpenGl/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/Til/Documents/GitHub/OpenGl/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-"C:\Program Files\cmake-4.1.0-windows-x86_64\bin\cmake.exe" -SC:/Users/tildu/Documents/GitHub/OpenGl -BC:/Users/tildu/Documents/GitHub/OpenGl/Build --check-stamp-file C:/Users/tildu/Documents/GitHub/OpenGl/Build/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Til/Documents/GitHub/OpenGl -BC:/Users/Til/Documents/GitHub/OpenGl/build --check-stamp-file C:/Users/Til/Documents/GitHub/OpenGl/build/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -283,18 +294,18 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\CMakeCInformation.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\CMakeCXXInformation.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\CMakeDependentOption.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\CMakeGenericSystem.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\CMakeLanguageInformation.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\CMakeRCInformation.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\Compiler\MSVC-C.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\Compiler\MSVC.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\Linker\MSVC-C.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\Linker\MSVC-CXX.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\Linker\MSVC.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\Platform\Windows.cmake;C:\Program Files\cmake-4.1.0-windows-x86_64\share\cmake-4.1\Modules\Platform\WindowsPaths.cmake;C:\Users\tildu\Documents\GitHub\OpenGl\Build\CMakeFiles\4.1.0\CMakeCCompiler.cmake;C:\Users\tildu\Documents\GitHub\OpenGl\Build\CMakeFiles\4.1.0\CMakeCXXCompiler.cmake;C:\Users\tildu\Documents\GitHub\OpenGl\Build\CMakeFiles\4.1.0\CMakeRCCompiler.cmake;C:\Users\tildu\Documents\GitHub\OpenGl\Build\CMakeFiles\4.1.0\CMakeSystem.cmake;C:\Users\tildu\Documents\GitHub\OpenGl\Build\CMakeFiles\cmake.verify_globs;C:\vcpkg\scripts\buildsystems\vcpkg.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\tildu\Documents\GitHub\OpenGl\Build\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Linker\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Linker\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\WindowsPaths.cmake;C:\Users\Til\Documents\GitHub\OpenGl\build\CMakeFiles\4.2.0\CMakeCCompiler.cmake;C:\Users\Til\Documents\GitHub\OpenGl\build\CMakeFiles\4.2.0\CMakeCXXCompiler.cmake;C:\Users\Til\Documents\GitHub\OpenGl\build\CMakeFiles\4.2.0\CMakeRCCompiler.cmake;C:\Users\Til\Documents\GitHub\OpenGl\build\CMakeFiles\4.2.0\CMakeSystem.cmake;C:\Users\Til\Documents\GitHub\OpenGl\build\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Til\Documents\GitHub\OpenGl\build\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="C:\Users\tildu\Documents\GitHub\OpenGl\external\glad\src\glad.c" />
+    <ClCompile Include="C:\Users\Til\Documents\GitHub\OpenGl\external\glad\src\glad.c" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <ProjectReference Include="C:\Users\tildu\Documents\GitHub\OpenGl\Build\ZERO_CHECK.vcxproj">
-      <Project>{E3CEFF0D-44C4-3B1C-9E43-056BE54B4685}</Project>
+    <ProjectReference Include="C:\Users\Til\Documents\GitHub\OpenGl\build\ZERO_CHECK.vcxproj">
+      <Project>{AE3E0439-2406-3010-9E15-B31D22277FB7}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>

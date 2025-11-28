@@ -1,16 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\Users\tildu\Documents\GitHub\OpenGl\external\glad\src\glad.c">
+    <ClCompile Include="C:\Users\Til\Documents\GitHub\OpenGl\external\glad\src\glad.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\tildu\Documents\GitHub\OpenGl\CMakeLists.txt" />
+    <CustomBuild Include="C:\Users\Til\Documents\GitHub\OpenGl\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{4E2FEA5A-75D7-3B9A-A1DD-3B78C1E6919A}</UniqueIdentifier>
+      <UniqueIdentifier>{192C472E-06F6-3ED0-9F24-ABCE7204DC2E}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

@@ -12,7 +12,7 @@
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
 
-// ## Deine Engine ##
+// ## Engine ##
 #include "physics_engine/core/Engine.h"          // Pfad an deine Struktur anpassen
 #include "physics_engine/error/ErrorHandler.h"
 #include "physics_engine/objects/ObjectManager.h"
@@ -27,6 +27,7 @@
 #include "physics_engine/render/Renderer.h"
 #include "physics_engine/objects/ObjectBase.h"
 
+// ## GUI ##
 
 
 
@@ -34,7 +35,6 @@
 std::atomic<float> g_w{0.1f};       // Test vars for
 std::atomic<float> g_h{0.1f};       // for threaded 
 std::atomic<bool> g_running{true};  // user imput
-
 
 #define ReadThreadSleepTime 10
 void readResWin() {
@@ -97,7 +97,10 @@ void readResWin() {
 
 
 // ## Main Function ## 
-int main() {
+int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow) {
+    // -- GUI -- //
+    MessageBox(nullptr, "Fatal Error!", "Error", MB_OKCANCEL | MB_ICONERROR);
+    
     // --- Essentials --- //
     Engine engine("Standart");
     ErrorHandler errorhandler;
