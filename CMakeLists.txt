@@ -53,7 +53,7 @@ target_link_libraries(physics_engine
 
 
 # --- Executable bauen (deine App) ---
-add_executable(physics_app WIN32
+add_executable(physics_app
     src/main.cpp
 )
 

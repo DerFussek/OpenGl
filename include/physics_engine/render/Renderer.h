@@ -11,7 +11,6 @@
 #include "physics_engine/render/Drawable.h"
 
 
-
 struct Color {float r, g, b, a; };
 
 class Drawable;

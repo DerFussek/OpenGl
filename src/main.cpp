@@ -16,8 +16,8 @@
 #include "physics_engine/core/Engine.h"          // Pfad an deine Struktur anpassen
 #include "physics_engine/error/ErrorHandler.h"
 #include "physics_engine/objects/ObjectManager.h"
-#include "physics_engine/objects/shapes/Circle.h"
-#include "physics_engine/objects/shapes/Rect.h"
+#include "physics_engine/objects/shapes/GlCircle.h"
+#include "physics_engine/objects/shapes/GlRect.h"
 
 #include "physics_engine/buffers/VertexBuffer.h"
 #include "physics_engine/buffers/VertexBufferLayout.h"
@@ -27,8 +27,9 @@
 #include "physics_engine/render/Renderer.h"
 #include "physics_engine/objects/ObjectBase.h"
 
-// ## GUI ##
-
+// ## UI ##
+#include "physics_engine/ui/Panel.h"
+#include "physics_engine/ui/Button.h"
 
 
 // ## Global Vars and Functions ##
@@ -97,48 +98,45 @@ void readResWin() {
 
 
 // ## Main Function ## 
-int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow) {
-    // -- GUI -- //
-    MessageBox(nullptr, "Fatal Error!", "Error", MB_OKCANCEL | MB_ICONERROR);
-    
+int main() {
+    // -- UI -- //
+    Panel inspector;
+    Panel scene;
+    InputState gInput;
+
     // --- Essentials --- //
     Engine engine("Standart");
     ErrorHandler errorhandler;
     Renderer renderer;
     ObjectManager manager;
 
-    // ---     Test Abschnitt      --- //
-    Circle* circle = manager.CreateCircle({0.0f, 0.0f}, {0.2f, 0.9f, 0.9f, 1.0f}, 0.2f);
-    Rect* rect = manager.CreateRect({-0.5f, 0.0f}, {0.8f, 0.0f, 0.9f, 1.0f}, {0.25f, 0.5f});
-    
-
-    // --- Main loop --- //
-    std::thread t_read(readResWin);
     while(!engine.WindowShouldClose()) {
         try {
-            
             static auto last = glfwGetTime();
             auto now = glfwGetTime();
             float dt = static_cast<float>(now - last);
             last = now;
-           
-            float w = g_w.load();
-            float h = g_h.load();
 
-            rect->setSize( {w, h} );
-            rect->updateVertecies();
+            engine.UpdateInput(gInput);
 
-            //circle.setResulution((int)h);
-            //circle.updateVertecies();
-            
+            int winW, winH;
+            engine.getFrameBufferSize(&winW, &winH);
+            inspector.rect = {0.0f, 0.0f, winW * 0.3f, (float)winH};
+            scene.rect = {winW * 0.3f, 0.0f, winW * 0.7f, (float)winH};
 
-            renderer.clearBackground({0.1f, 0.1f, 0.12f, 1.0f});
-            renderer.clearQueue();
-            
-            renderer.addJob(rect);
-            renderer.addJob(circle);
-            
-            renderer.processQueue();
+            ButtonState btnSimulate;
+            Rect btnRect {
+                inspector.rect.x + 10.0f,
+                inspector.rect.y + 10.0f,
+                inspector.rect.w - 20.0f,
+                30.0f
+            };
+
+            bool startSim = DoButton("StartSimulation", btnRect, gInput, btnSimulate);
+            if (startSim) {
+                
+            }
+
 
             engine.SwapBuffersAndPollEvents();
             errorhandler.checkForErrors();
@@ -146,9 +144,6 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
             std::cerr << "Exeption in the Main-Loop: " << e.what() << std::endl;
         }
     }
-   
-    g_running.store(false);
-    if(t_read.joinable()) t_read.join();
     
     engine.kill();
     return 0;

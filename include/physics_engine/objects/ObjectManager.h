@@ -8,8 +8,8 @@
 #include <sstream>
 #include <iomanip>
 
-#include "physics_engine/objects/shapes/Circle.h"
-#include "physics_engine/objects/shapes/Rect.h"
+#include "physics_engine/objects/shapes/GlCircle.h"
+#include "physics_engine/objects/shapes/GlRect.h"
 
 struct IdGenerator {
     private:
@@ -32,20 +32,20 @@ struct IdGenerator {
 
 class ObjectManager {
     private:
-        std::unordered_map<std::string, std::unique_ptr<Circle>> m_Circles;
-        std::unordered_map<std::string, std::unique_ptr<Rect>> m_Rects;
+        std::unordered_map<std::string, std::unique_ptr<GlCircle>> m_Circles;
+        std::unordered_map<std::string, std::unique_ptr<GlRect>> m_Rects;
 
     public:
         // Circle
-        Circle* CreateCircle(std::array<float, 2> position, std::array<float, 4> color, float radius) {
+        GlCircle* CreateCircle(std::array<float, 2> position, std::array<float, 4> color, float radius) {
             std::string id = IdGenerator::Next();
-            auto circle = std::make_unique<Circle>(id, position, color, radius);
-            Circle* ptr = circle.get();
+            auto circle = std::make_unique<GlCircle>(id, position, color, radius);
+            GlCircle* ptr = circle.get();
             m_Circles.emplace(id, std::move(circle));
             return ptr;
         }
 
-        Circle* GetCircle(const std::string& id) {
+        GlCircle* GetCircle(const std::string& id) {
             auto it = m_Circles.find(id);
             if (it == m_Circles.end()) return nullptr;
             return it->second.get();
@@ -58,15 +58,15 @@ class ObjectManager {
         auto& GetAllCircles() { return m_Circles; }
 
         // Rect
-        Rect* CreateRect(std::array<float, 2> pos, std::array<float, 4> color, std::array<float, 2> size) {
+        GlRect* CreateRect(std::array<float, 2> pos, std::array<float, 4> color, std::array<float, 2> size) {
             std::string id = IdGenerator::Next();
-            auto rect = std::make_unique<Rect>(id, pos, color, size);
-            Rect* ptr = rect.get();
+            auto rect = std::make_unique<GlRect>(id, pos, color, size);
+            GlRect* ptr = rect.get();
             m_Rects.emplace(id, std::move(rect));
             return ptr;
         }
 
-        Rect* GetRect(const std::string& id) {
+        GlRect* GetRect(const std::string& id) {
             auto it = m_Rects.find(id);
             if (it == m_Rects.end()) return nullptr;
             return it->second.get();

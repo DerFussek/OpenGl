@@ -1,6 +1,6 @@
-^C:\USERS\TIL\DOCUMENTS\GITHUB\OPENGL\BUILD\CMAKEFILES\D99D670E3EB55D6FD39D4BF51B577068\GENERATE.STAMP.RULE
+^C:\USERS\TILDU\DOCUMENTS\GITHUB\OPENGL\BUILD\CMAKEFILES\C5350A5B422526032080A770AF7C82FD\GENERATE.STAMP.RULE
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Til/Documents/GitHub/OpenGl -BC:/Users/Til/Documents/GitHub/OpenGl/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/Til/Documents/GitHub/OpenGl/build/OpenGL.slnx
+"C:\Program Files\cmake-4.1.0-windows-x86_64\bin\cmake.exe" -SC:/Users/tildu/Documents/GitHub/OpenGl -BC:/Users/tildu/Documents/GitHub/OpenGl/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/tildu/Documents/GitHub/OpenGl/build/OpenGL.sln
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
