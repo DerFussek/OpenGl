@@ -2,7 +2,7 @@
 #include <Windows.h>
 //#include <filesystem>
 #include <iostream>
-#include <sstream>      // <-- fehlt bei dir
+#include <sstream>     
 
 // ## Threading ##
 #include <thread>
@@ -13,7 +13,7 @@
 #include <GLFW/glfw3.h>
 
 // ## Engine ##
-#include "physics_engine/core/Engine.h"          // Pfad an deine Struktur anpassen
+#include "physics_engine/core/Engine.h"          
 #include "physics_engine/error/ErrorHandler.h"
 #include "physics_engine/objects/ObjectManager.h"
 #include "physics_engine/objects/shapes/GlCircle.h"
@@ -33,84 +33,23 @@
 
 
 // ## Global Vars and Functions ##
-std::atomic<float> g_w{0.1f};       // Test vars for
-std::atomic<float> g_h{0.1f};       // for threaded 
-std::atomic<bool> g_running{true};  // user imput
-
-#define ReadThreadSleepTime 10
-void readResWin() {
-    HANDLE event = GetStdHandle(STD_INPUT_HANDLE);
-    if(event == INVALID_HANDLE_VALUE) return;
-
-    std::string buffer;
-    std::cout << "> " << std::flush;
-
-    while(g_running.load()) {
-        DWORD numEvents = 0;
-
-        if(!GetNumberOfConsoleInputEvents(event, &numEvents)) { // Fehler 
-            std::this_thread::sleep_for(std::chrono::milliseconds(ReadThreadSleepTime));
-            continue;
-        }
-
-        if(numEvents == 0) {    // keine Events
-            std::this_thread::sleep_for(std::chrono::milliseconds(ReadThreadSleepTime));
-            continue;
-        }
-
-        INPUT_RECORD rec;
-        DWORD read = 0;
-        if(!ReadConsoleInputA(event, &rec, 1, &read) || read == 0) continue;
-        if(rec.EventType != KEY_EVENT) continue;
-
-        KEY_EVENT_RECORD& key = rec.Event.KeyEvent;
-        if(!key.bKeyDown) continue;
-        char ch = key.uChar.AsciiChar;
-
-        if(ch == '\r') {
-            std::cout << '\n';
-
-            try {
-                std::istringstream iss(buffer);
-                float w, h;
-
-                if(iss >> w >> h) {
-                    g_w.store(w);
-                    g_h.store(h);
-                    std::cout << "Neue Wete: w=" << w << " h=" << h << "\n";
-                } else {
-                    std::cout << "Eingabe-Format: <w> <h>\n";
-                }
-            } catch(std::exception &e) {
-                std::cerr << "Parse-Fehler: " << e.what() << "\n";
-            }
-
-            buffer.clear();
-            std::cout << "> " << std::flush;
-        } else if(ch == '\b') {
-            if(!buffer.empty()) buffer.pop_back();
-        } else if(ch >= 32 && ch < 127) {
-            buffer.push_back(ch);
-            std::cout << ch << std::flush;
-        }
-    }
-}
-
 
 // ## Main Function ## 
 int main() {
-    // -- UI -- //
-    Panel inspector;
-    Panel scene;
-    InputState gInput;
-
+    
     // --- Essentials --- //
     Engine engine("Standart");
     ErrorHandler errorhandler;
     Renderer renderer;
     ObjectManager manager;
 
-    while(!engine.WindowShouldClose()) {
+        // -- UI -- //
+    Panel inspector{};
+    Panel scene{};
+    GlRect* btnRectShape = nullptr;
+    InputState gInput{};
+
+    while (!engine.WindowShouldClose()) {
         try {
             static auto last = glfwGetTime();
             auto now = glfwGetTime();
@@ -118,25 +57,124 @@ int main() {
             last = now;
 
             engine.UpdateInput(gInput);
-
+            
             int winW, winH;
             engine.getFrameBufferSize(&winW, &winH);
-            inspector.rect = {0.0f, 0.0f, winW * 0.3f, (float)winH};
-            scene.rect = {winW * 0.3f, 0.0f, winW * 0.7f, (float)winH};
+            glViewport(0, 0, winW, winH);
 
+            // ===================== INSPECTOR (links) =====================
+            inspector.screenRect = {
+                0.0f,
+                0.0f,
+                winW * 0.3f,
+                (float)winH
+            };
+
+            float inspCenterX_px = inspector.screenRect.x + inspector.screenRect.w * 0.5f;
+            float inspCenterY_px = inspector.screenRect.y + inspector.screenRect.h * 0.5f;
+
+            float inspCenterX_ndc = Engine::PixelToNdcX(inspCenterX_px, winW);
+            float inspCenterY_ndc = Engine::PixelToNdcY(inspCenterY_px, winH);
+
+            float inspWidth_ndc  = (inspector.screenRect.w / winW) * 2.0f;
+            float inspHeight_ndc = (inspector.screenRect.h / winH) * 2.0f;
+
+            std::array<float, 4> inspColor = {0.2f, 0.2f, 0.2f, 1.0f};
+
+            if (!inspector.rect) {
+                inspector.rect = manager.CreateRect(
+                    inspCenterX_ndc, inspCenterY_ndc,
+                    inspColor,
+                    inspWidth_ndc, inspHeight_ndc
+                );
+            } else {
+                inspector.rect->setPosition(inspCenterX_ndc, inspCenterY_ndc);
+                inspector.rect->setSize(inspWidth_ndc, inspHeight_ndc);
+            }
+
+            // ===================== SCENE (rechts) =====================
+            scene.screenRect = {
+                winW * 0.3f,      // Start rechts vom Inspector
+                0.0f,
+                winW * 0.7f,
+                (float)winH
+            };
+
+            float sceneCenterX_px = scene.screenRect.x + scene.screenRect.w * 0.5f;
+            float sceneCenterY_px = scene.screenRect.y + scene.screenRect.h * 0.5f;
+
+            float sceneCenterX_ndc = Engine::PixelToNdcX(sceneCenterX_px, winW);
+            float sceneCenterY_ndc = Engine::PixelToNdcY(sceneCenterY_px, winH);
+
+            float sceneWidth_ndc  = (scene.screenRect.w / winW) * 2.0f;
+            float sceneHeight_ndc = (scene.screenRect.h / winH) * 2.0f;
+
+            std::array<float, 4> sceneColor = {0.1f, 0.1f, 0.1f, 1.0f};
+
+            if (!scene.rect) {
+                scene.rect = manager.CreateRect(
+                    sceneCenterX_ndc, sceneCenterY_ndc,
+                    sceneColor,
+                    sceneWidth_ndc, sceneHeight_ndc
+                );
+            } else {
+                scene.rect->setPosition(sceneCenterX_ndc, sceneCenterY_ndc);
+                scene.rect->setSize(sceneWidth_ndc, sceneHeight_ndc);
+            }
+
+            // ===================== BUTTON im INSPECTOR =====================
             ButtonState btnSimulate;
-            Rect btnRect {
-                inspector.rect.x + 10.0f,
-                inspector.rect.y + 10.0f,
-                inspector.rect.w - 20.0f,
+            Rect btnRect{
+                inspector.screenRect.x + 10.0f,
+                inspector.screenRect.y + 10.0f,
+                inspector.screenRect.w - 20.0f,
                 30.0f
             };
 
             bool startSim = DoButton("StartSimulation", btnRect, gInput, btnSimulate);
             if (startSim) {
-                
+                // TODO: Simulations-Flag setzen
+                std::cout << "CLICK!\n";
             }
 
+            // Button als GlRect zeichnen (NDC)
+            float btnCenterX_px = btnRect.x + btnRect.w * 0.5f;
+            float btnCenterY_px = btnRect.y + btnRect.h * 0.5f;
+
+            float btnCenterX_ndc = Engine::PixelToNdcX(btnCenterX_px, winW);
+            float btnCenterY_ndc = Engine::PixelToNdcY(btnCenterY_px, winH);
+
+            float btnWidth_ndc  = (btnRect.w / winW) * 2.0f;
+            float btnHeight_ndc = (btnRect.h / winH) * 2.0f;
+
+            // Farbe je nach Zustand
+            std::array<float, 4> btnColor;
+            if (btnSimulate.pressed) {
+                btnColor = {0.25f, 0.25f, 0.35f, 1.0f}; // pressed
+            } else if (btnSimulate.hovered) {
+                btnColor = {0.20f, 0.20f, 0.30f, 1.0f}; // hover
+            } else {
+                btnColor = {0.15f, 0.15f, 0.25f, 1.0f}; // normal
+            }
+
+            if (!btnRectShape) {
+                btnRectShape = manager.CreateRect(
+                    btnCenterX_ndc, btnCenterY_ndc,
+                    btnColor,
+                    btnWidth_ndc, btnHeight_ndc
+                );
+            } else {
+                btnRectShape->setPosition(btnCenterX_ndc, btnCenterY_ndc);
+                btnRectShape->setSize(btnWidth_ndc, btnHeight_ndc);
+                btnRectShape->setColor(btnColor);
+            }
+
+            // ===================== RENDERING =====================
+            renderer.addJob(inspector.rect);
+            renderer.addJob(scene.rect);
+            if(btnRectShape) renderer.addJob(btnRectShape);
+
+            renderer.processQueue();
 
             engine.SwapBuffersAndPollEvents();
             errorhandler.checkForErrors();
@@ -144,6 +182,7 @@ int main() {
             std::cerr << "Exeption in the Main-Loop: " << e.what() << std::endl;
         }
     }
+
     
     engine.kill();
     return 0;

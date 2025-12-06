@@ -2,8 +2,8 @@
 
 
 struct Rect {
-    float x, y;
-    float w, h;
+    float x = 0, y = 0;
+    float w = 0, h = 0;
 
     bool Contains(float px, float py) const {
 

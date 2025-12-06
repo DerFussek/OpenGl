@@ -7,16 +7,16 @@ struct ButtonState {
     bool pressed = false;
 };
 
-bool DoButton(const char* id, const Rect &r, InputState& in, ButtonState& state) {
-    state.hovered = r.Contains((float)in.mouseX, (float)in.mouseY);
+bool DoButton(const char* id, const Rect& r, const InputState& in, ButtonState& state) {
+    state.hovered = (in.mouseX >= r.x && in.mouseX <= r.x + r.w &&
+                     in.mouseY >= r.y && in.mouseY <= r.y + r.h);
 
     bool clicked = false;
-    if(state.hovered && in.mousePressedLeft) {
-        clicked = true;
+    if (state.hovered && in.mousePressedLeft) {
         state.pressed = true;
+        clicked = true;
     } else {
         state.pressed = false;
     }
-
     return clicked;
 }

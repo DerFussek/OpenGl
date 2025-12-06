@@ -1,7 +1,7 @@
 #include "physics_engine/objects/shapes/GlCircle.h"
 
 GlCircle::GlCircle(const std::string& id, std::array<float,2>position, std::array<float,4>color, float radius)
-    : shader("../../assets/shaders/Shape.shader", true), ObjectBase(id) {
+    : shader("../../assets/shaders/Circle.shader", true), ObjectBase(id) {
     m_Pos = position;
     m_Color = color;
     m_Radius = radius;

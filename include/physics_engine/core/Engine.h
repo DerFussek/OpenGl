@@ -38,7 +38,29 @@ class Engine {
             in.mousePressedLeft = (!lastDown && in.mouseDownLeft);
             lastDown = in.mouseDownLeft;
         }
-        
+
+        static float PixelToNdcX(float x, int winW) {
+            return (x / (float)winW) * 2.0f - 1.0f;
+        }
+
+        static float PixelToNdcY(float y, int winH) {
+            // Pixel-Y: oben = 0, unten = winH
+            // NDC-Y : unten = -1, oben = +1
+            return 1.0f - (y / (float)winH) * 2.0f;
+        }
+
+        static float NdcToPixelX(float x, int winW) {
+            return (x + 1.0f) * 0.5f * (float)winW;
+        }
+
+        static float NdcToPixelY(float y, int winH) {
+            return (1.0f - y) * 0.5f * (float)winH;
+        }
+
+        void updateDimensions() {
+            glfwGetFramebufferSize(m_Window, &m_Width, &m_Height);
+        }
+
         std::array<float, 2> toPx(float x, float y);
         
 

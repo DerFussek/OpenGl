@@ -58,9 +58,9 @@ class ObjectManager {
         auto& GetAllCircles() { return m_Circles; }
 
         // Rect
-        GlRect* CreateRect(std::array<float, 2> pos, std::array<float, 4> color, std::array<float, 2> size) {
+        GlRect* CreateRect(float posX, float posY, const std::array<float, 4>& color, float width, float height) {
             std::string id = IdGenerator::Next();
-            auto rect = std::make_unique<GlRect>(id, pos, color, size);
+            auto rect = std::make_unique<GlRect>(id, posX, posY, color, width, height);
             GlRect* ptr = rect.get();
             m_Rects.emplace(id, std::move(rect));
             return ptr;
