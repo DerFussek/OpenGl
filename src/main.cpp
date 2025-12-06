@@ -170,12 +170,22 @@ int main() {
             }
 
             // ===================== RENDERING =====================
+
             renderer.addJob(inspector.rect);
             renderer.addJob(scene.rect);
             if(btnRectShape) renderer.addJob(btnRectShape);
 
-            renderer.processQueue();
+            for(auto& [id, ptr] : manager.GetAllRects()) {
+                GlRect* obj = ptr.get();
+                renderer.addJob(obj);
+            }
 
+            for(auto& [id, ptr] : manager.GetAllCircles()) {
+                GlCircle* obj = ptr.get();
+                renderer.addJob(obj);
+            }
+
+            renderer.processQueue();
             engine.SwapBuffersAndPollEvents();
             errorhandler.checkForErrors();
         } catch (std::exception &e) {
