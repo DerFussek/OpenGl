@@ -5,17 +5,17 @@
 			"expression" : "C:/Users/tildu/Documents/GitHub/OpenGl/src/*.cpp",
 			"paths" : 
 			[
-				"C:/Users/tildu/Documents/GitHub/OpenGl/src/buffers/IndexBuffer.cpp",
-				"C:/Users/tildu/Documents/GitHub/OpenGl/src/buffers/VertexArray.cpp",
-				"C:/Users/tildu/Documents/GitHub/OpenGl/src/buffers/VertexBuffer.cpp",
-				"C:/Users/tildu/Documents/GitHub/OpenGl/src/core/Engine.cpp",
-				"C:/Users/tildu/Documents/GitHub/OpenGl/src/core/UserInterface.cpp",
-				"C:/Users/tildu/Documents/GitHub/OpenGl/src/error/ErrorHandler.cpp",
 				"C:/Users/tildu/Documents/GitHub/OpenGl/src/main.cpp",
-				"C:/Users/tildu/Documents/GitHub/OpenGl/src/objects/shapes/GlCircle.cpp",
-				"C:/Users/tildu/Documents/GitHub/OpenGl/src/objects/shapes/GlRect.cpp",
-				"C:/Users/tildu/Documents/GitHub/OpenGl/src/render/Renderer.cpp",
-				"C:/Users/tildu/Documents/GitHub/OpenGl/src/shader/Shader.cpp"
+				"C:/Users/tildu/Documents/GitHub/OpenGl/src/physics_engine/Shader/Shader.cpp",
+				"C:/Users/tildu/Documents/GitHub/OpenGl/src/physics_engine/buffers/IndexBuffer.cpp",
+				"C:/Users/tildu/Documents/GitHub/OpenGl/src/physics_engine/buffers/VertexArray.cpp",
+				"C:/Users/tildu/Documents/GitHub/OpenGl/src/physics_engine/buffers/VertexBuffer.cpp",
+				"C:/Users/tildu/Documents/GitHub/OpenGl/src/physics_engine/core/Engine.cpp",
+				"C:/Users/tildu/Documents/GitHub/OpenGl/src/physics_engine/core/UserInterface.cpp",
+				"C:/Users/tildu/Documents/GitHub/OpenGl/src/physics_engine/error/ErrorHandler.cpp",
+				"C:/Users/tildu/Documents/GitHub/OpenGl/src/physics_engine/objects/shapes/GlCircle.cpp",
+				"C:/Users/tildu/Documents/GitHub/OpenGl/src/physics_engine/objects/shapes/GlRect.cpp",
+				"C:/Users/tildu/Documents/GitHub/OpenGl/src/physics_engine/render/Renderer.cpp"
 			],
 			"recurse" : true
 		}
