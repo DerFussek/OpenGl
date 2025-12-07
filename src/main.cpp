@@ -11,6 +11,11 @@
 // ## External Libs ##
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
+#include <glm/glm.hpp>
+#include <glm/gtc/matrix_transform.hpp>
+
+#include<ft2build.h>
+#include FT_FREETYPE_H
 
 // ## Engine ##
 #include "physics_engine/core/Engine.h"          
@@ -25,14 +30,16 @@
 #include "physics_engine/buffers/IndexBuffer.h"
 #include "physics_engine/shader/Shader.h"
 #include "physics_engine/render/Renderer.h"
+#include "physics_engine/render/TextRenderer.h"
 #include "physics_engine/objects/ObjectBase.h"
+#include "physics_engine/objects/Text.h"
 
 // ## UI ##
 #include "physics_engine/ui/Panel.h"
 #include "physics_engine/ui/Button.h"
 
-
 // ## Global Vars and Functions ##
+
 
 // ## Main Function ## 
 int main() {
@@ -42,13 +49,18 @@ int main() {
     ErrorHandler errorhandler;
     Renderer renderer;
     ObjectManager manager;
+    
+    Shader g_TextShader("../../assets/shaders/Text.shader", true);
+    TextRenderer g_TextRenderer(g_TextShader.GetID(), "../../assets/fonts/Satoshi-Regular.ttf", 48);
 
-        // -- UI -- //
+    // -- UI -- //
     Panel inspector{};
     Panel scene{};
     GlRect* btnRectShape = nullptr;
     InputState gInput{};
 
+    Text txt(g_TextRenderer, "Hello World!", glm::vec2(0.0f, 0.0f), 1.0f, glm::vec3(1.0f, 0.0f, 0.0f));
+    
     while (!engine.WindowShouldClose()) {
         try {
             static auto last = glfwGetTime();
@@ -185,7 +197,19 @@ int main() {
                 renderer.addJob(obj);
             }
 
+            
+
             renderer.processQueue();
+
+            glm::mat4 projection = glm::ortho<float>(
+                0.0f, (float)winW,
+                0.0f, (float)winH
+            );
+
+            g_TextShader.Bind();
+            txt.render(projection);
+
+
             engine.SwapBuffersAndPollEvents();
             errorhandler.checkForErrors();
         } catch (std::exception &e) {
@@ -193,7 +217,7 @@ int main() {
         }
     }
 
-    
+    std::cout << "Engine killed!\n";
     engine.kill();
     return 0;
 }

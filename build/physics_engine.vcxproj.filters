@@ -31,7 +31,13 @@
     <ClCompile Include="C:\Users\tildu\Documents\GitHub\OpenGl\src\physics_engine\objects\shapes\GlRect.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Users\tildu\Documents\GitHub\OpenGl\src\physics_engine\objects\shapes\Text.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="C:\Users\tildu\Documents\GitHub\OpenGl\src\physics_engine\render\Renderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\tildu\Documents\GitHub\OpenGl\src\physics_engine\render\TextRenderer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

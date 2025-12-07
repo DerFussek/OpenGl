@@ -8,4 +8,6 @@ C:\Users\tildu\Documents\GitHub\OpenGl\src\physics_engine\core\UserInterface.cpp
 C:\Users\tildu\Documents\GitHub\OpenGl\src\physics_engine\error\ErrorHandler.cpp;C:\Users\tildu\Documents\GitHub\OpenGl\build\physics_engine.dir\Debug\ErrorHandler.obj
 C:\Users\tildu\Documents\GitHub\OpenGl\src\physics_engine\objects\shapes\GlCircle.cpp;C:\Users\tildu\Documents\GitHub\OpenGl\build\physics_engine.dir\Debug\GlCircle.obj
 C:\Users\tildu\Documents\GitHub\OpenGl\src\physics_engine\objects\shapes\GlRect.cpp;C:\Users\tildu\Documents\GitHub\OpenGl\build\physics_engine.dir\Debug\GlRect.obj
+C:\Users\tildu\Documents\GitHub\OpenGl\src\physics_engine\objects\shapes\Text.cpp;C:\Users\tildu\Documents\GitHub\OpenGl\build\physics_engine.dir\Debug\Text.obj
 C:\Users\tildu\Documents\GitHub\OpenGl\src\physics_engine\render\Renderer.cpp;C:\Users\tildu\Documents\GitHub\OpenGl\build\physics_engine.dir\Debug\Renderer.obj
+C:\Users\tildu\Documents\GitHub\OpenGl\src\physics_engine\render\TextRenderer.cpp;C:\Users\tildu\Documents\GitHub\OpenGl\build\physics_engine.dir\Debug\TextRenderer.obj
