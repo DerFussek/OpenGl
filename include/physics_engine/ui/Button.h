@@ -1,22 +1,30 @@
 #pragma once
-#include "utils/forms/Rect.h"
-#include "physics_engine/core/Engine.h"
 
-struct ButtonState {
-    bool hovered = false;
-    bool pressed = false;
+#include <functional>
+#include "physics_engine/ui/UIElement.h"
+#include "physics_engine/objects/Updateable.h"
+
+namespace PhyEn {
+
+class Button : public UIElement, public Updateable {
+public:
+    using Callback = std::function<void()>;
+
+    Button(const glm::vec2& position,
+           const glm::vec2& size,
+           const glm::vec4& color,
+           Callback onClick)
+        : UIElement(position, size, color),
+          m_onClick(std::move(onClick))
+    {}
+
+    void update(float /*dt*/) override;
+    void onMouseEvent(const glm::vec2& mousePos, bool pressed);
+
+private:
+    Callback m_onClick;
+    bool m_hovered {false};
+    bool m_pressed {false};
 };
 
-bool DoButton(const char* id, const Rect& r, const InputState& in, ButtonState& state) {
-    state.hovered = (in.mouseX >= r.x && in.mouseX <= r.x + r.w &&
-                     in.mouseY >= r.y && in.mouseY <= r.y + r.h);
-
-    bool clicked = false;
-    if (state.hovered && in.mousePressedLeft) {
-        state.pressed = true;
-        clicked = true;
-    } else {
-        state.pressed = false;
-    }
-    return clicked;
-}
+} // namespace pe

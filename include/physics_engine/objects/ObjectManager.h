@@ -1,81 +1,49 @@
 #pragma once
-#include <iostream>
-#include <stdexcept>
-#include <string>
-#include <array>
-#include <unordered_map>
+
+#include <vector>
 #include <memory>
-#include <sstream>
-#include <iomanip>
+#include "physics_engine/objects/Drawable.h"
+#include "physics_engine/objects/Updateable.h"
 
-#include "physics_engine/objects/shapes/GlCircle.h"
-#include "physics_engine/objects/shapes/GlRect.h"
+namespace PhyEn {
 
-struct IdGenerator {
-    private:
-        inline static unsigned int s_Counter = 0;
-        static const int maxObjs = 9999;
-    public:
-        static std::string Next() {
-            if(s_Counter > maxObjs) {
-                s_Counter = 0;
-                throw std::runtime_error("Maximum Number of IDs reached");
+    class Renderer2D;
+
+    // ObjectManager.h
+    class ObjectManager {
+        public:
+            template<typename T, typename... Args>
+            T* createDrawable(Args&&... args)
+            {
+                auto obj = std::make_unique<T>(std::forward<Args>(args)...);
+                T* ptr = obj.get();
+                m_drawables.push_back(std::move(obj));
+                return ptr;
             }
 
-            std::ostringstream oss;
-            oss << std::setw(4) << std::setfill('0') << s_Counter++;
-            return oss.str();
-        }
-};
+            Drawable* addDrawable(std::unique_ptr<Drawable> obj)
+            {
+                Drawable* ptr = obj.get();
+                m_drawables.push_back(std::move(obj));
+                return ptr;
+            }
+
+            void updateAll(float dt)
+            {
+                for (auto& u : m_updateables)
+                    u->update(dt);
+            }
+
+            void drawAll(Renderer2D& renderer)
+            {
+                for (auto& d : m_drawables)
+                    d->draw(renderer);
+            }
+
+        private:
+            std::vector<std::unique_ptr<Drawable>>   m_drawables;
+            std::vector<std::unique_ptr<Updateable>> m_updateables;
+    };
 
 
-
-class ObjectManager {
-    private:
-        std::unordered_map<std::string, std::unique_ptr<GlCircle>> m_Circles;
-        std::unordered_map<std::string, std::unique_ptr<GlRect>> m_Rects;
-
-    public:
-        // Circle
-        GlCircle* CreateCircle(std::array<float, 2> position, std::array<float, 4> color, float radius) {
-            std::string id = IdGenerator::Next();
-            auto circle = std::make_unique<GlCircle>(id, position, color, radius);
-            GlCircle* ptr = circle.get();
-            m_Circles.emplace(id, std::move(circle));
-            return ptr;
-        }
-
-        GlCircle* GetCircle(const std::string& id) {
-            auto it = m_Circles.find(id);
-            if (it == m_Circles.end()) return nullptr;
-            return it->second.get();
-        }
-
-        bool RemoveCircle(const std::string& id) {
-            return m_Circles.erase(id) > 0;
-        }
-
-        auto& GetAllCircles() { return m_Circles; }
-
-        // Rect
-        GlRect* CreateRect(float posX, float posY, const std::array<float, 4>& color, float width, float height) {
-            std::string id = IdGenerator::Next();
-            auto rect = std::make_unique<GlRect>(id, posX, posY, color, width, height);
-            GlRect* ptr = rect.get();
-            m_Rects.emplace(id, std::move(rect));
-            return ptr;
-        }
-
-        GlRect* GetRect(const std::string& id) {
-            auto it = m_Rects.find(id);
-            if (it == m_Rects.end()) return nullptr;
-            return it->second.get();
-        }
-
-        bool RemoveRect(const std::string& id) {
-            return m_Rects.erase(id) > 0;
-        }
-
-        auto& GetAllRects() { return m_Rects; }
-};
-
+} // namespace pe

@@ -1,9 +1,15 @@
 #pragma once
 
-#include "utils/forms/Rect.h"
-#include "physics_engine/objects/shapes/GlRect.h"
+#include "physics_engine/ui/UIElement.h"
 
-struct Panel {
-    Rect screenRect{};
-    GlRect* rect = nullptr;
-};
+namespace PhyEn {
+
+class Panel : public UIElement {
+    public:
+        Panel(const glm::vec2& position,
+            const glm::vec2& size,
+            const glm::vec4& color)
+            : UIElement(position, size, color) {}
+    };
+
+} // namespace pe

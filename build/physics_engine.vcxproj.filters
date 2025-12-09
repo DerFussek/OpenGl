@@ -4,40 +4,37 @@
     <ClCompile Include="C:\Users\tildu\Documents\GitHub\OpenGl\src\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\tildu\Documents\GitHub\OpenGl\src\physics_engine\Shader\Shader.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="C:\Users\tildu\Documents\GitHub\OpenGl\src\physics_engine\buffers\IndexBuffer.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="C:\Users\tildu\Documents\GitHub\OpenGl\src\physics_engine\buffers\VertexArray.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="C:\Users\tildu\Documents\GitHub\OpenGl\src\physics_engine\buffers\VertexBuffer.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="C:\Users\tildu\Documents\GitHub\OpenGl\src\physics_engine\core\Engine.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="C:\Users\tildu\Documents\GitHub\OpenGl\src\physics_engine\core\UserInterface.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="C:\Users\tildu\Documents\GitHub\OpenGl\src\physics_engine\error\ErrorHandler.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\tildu\Documents\GitHub\OpenGl\src\physics_engine\objects\shapes\GlCircle.cpp">
+    <ClCompile Include="C:\Users\tildu\Documents\GitHub\OpenGl\src\physics_engine\objects\GlShape.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\tildu\Documents\GitHub\OpenGl\src\physics_engine\objects\shapes\GlRect.cpp">
+    <ClCompile Include="C:\Users\tildu\Documents\GitHub\OpenGl\src\physics_engine\objects\ShapeFactory.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\tildu\Documents\GitHub\OpenGl\src\physics_engine\objects\shapes\Text.cpp">
+    <ClCompile Include="C:\Users\tildu\Documents\GitHub\OpenGl\src\physics_engine\rendering\IndexBuffer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\tildu\Documents\GitHub\OpenGl\src\physics_engine\render\Renderer.cpp">
+    <ClCompile Include="C:\Users\tildu\Documents\GitHub\OpenGl\src\physics_engine\rendering\Renderer2D.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\tildu\Documents\GitHub\OpenGl\src\physics_engine\render\TextRenderer.cpp">
+    <ClCompile Include="C:\Users\tildu\Documents\GitHub\OpenGl\src\physics_engine\rendering\Shader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\tildu\Documents\GitHub\OpenGl\src\physics_engine\rendering\VertexArray.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\tildu\Documents\GitHub\OpenGl\src\physics_engine\rendering\VertexBuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\tildu\Documents\GitHub\OpenGl\src\ui\Button.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\tildu\Documents\GitHub\OpenGl\src\ui\UIElement.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

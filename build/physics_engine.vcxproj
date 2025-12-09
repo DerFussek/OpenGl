@@ -289,18 +289,17 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="C:\Users\tildu\Documents\GitHub\OpenGl\src\main.cpp" />
-    <ClCompile Include="C:\Users\tildu\Documents\GitHub\OpenGl\src\physics_engine\Shader\Shader.cpp" />
-    <ClCompile Include="C:\Users\tildu\Documents\GitHub\OpenGl\src\physics_engine\buffers\IndexBuffer.cpp" />
-    <ClCompile Include="C:\Users\tildu\Documents\GitHub\OpenGl\src\physics_engine\buffers\VertexArray.cpp" />
-    <ClCompile Include="C:\Users\tildu\Documents\GitHub\OpenGl\src\physics_engine\buffers\VertexBuffer.cpp" />
     <ClCompile Include="C:\Users\tildu\Documents\GitHub\OpenGl\src\physics_engine\core\Engine.cpp" />
-    <ClCompile Include="C:\Users\tildu\Documents\GitHub\OpenGl\src\physics_engine\core\UserInterface.cpp" />
     <ClCompile Include="C:\Users\tildu\Documents\GitHub\OpenGl\src\physics_engine\error\ErrorHandler.cpp" />
-    <ClCompile Include="C:\Users\tildu\Documents\GitHub\OpenGl\src\physics_engine\objects\shapes\GlCircle.cpp" />
-    <ClCompile Include="C:\Users\tildu\Documents\GitHub\OpenGl\src\physics_engine\objects\shapes\GlRect.cpp" />
-    <ClCompile Include="C:\Users\tildu\Documents\GitHub\OpenGl\src\physics_engine\objects\shapes\Text.cpp" />
-    <ClCompile Include="C:\Users\tildu\Documents\GitHub\OpenGl\src\physics_engine\render\Renderer.cpp" />
-    <ClCompile Include="C:\Users\tildu\Documents\GitHub\OpenGl\src\physics_engine\render\TextRenderer.cpp" />
+    <ClCompile Include="C:\Users\tildu\Documents\GitHub\OpenGl\src\physics_engine\objects\GlShape.cpp" />
+    <ClCompile Include="C:\Users\tildu\Documents\GitHub\OpenGl\src\physics_engine\objects\ShapeFactory.cpp" />
+    <ClCompile Include="C:\Users\tildu\Documents\GitHub\OpenGl\src\physics_engine\rendering\IndexBuffer.cpp" />
+    <ClCompile Include="C:\Users\tildu\Documents\GitHub\OpenGl\src\physics_engine\rendering\Renderer2D.cpp" />
+    <ClCompile Include="C:\Users\tildu\Documents\GitHub\OpenGl\src\physics_engine\rendering\Shader.cpp" />
+    <ClCompile Include="C:\Users\tildu\Documents\GitHub\OpenGl\src\physics_engine\rendering\VertexArray.cpp" />
+    <ClCompile Include="C:\Users\tildu\Documents\GitHub\OpenGl\src\physics_engine\rendering\VertexBuffer.cpp" />
+    <ClCompile Include="C:\Users\tildu\Documents\GitHub\OpenGl\src\ui\Button.cpp" />
+    <ClCompile Include="C:\Users\tildu\Documents\GitHub\OpenGl\src\ui\UIElement.cpp" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

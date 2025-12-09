@@ -5,18 +5,17 @@
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "C:/Users/tildu/Documents/GitHub/OpenGl/src/*.cpp")
 set(OLD_GLOB
   "C:/Users/tildu/Documents/GitHub/OpenGl/src/main.cpp"
-  "C:/Users/tildu/Documents/GitHub/OpenGl/src/physics_engine/Shader/Shader.cpp"
-  "C:/Users/tildu/Documents/GitHub/OpenGl/src/physics_engine/buffers/IndexBuffer.cpp"
-  "C:/Users/tildu/Documents/GitHub/OpenGl/src/physics_engine/buffers/VertexArray.cpp"
-  "C:/Users/tildu/Documents/GitHub/OpenGl/src/physics_engine/buffers/VertexBuffer.cpp"
   "C:/Users/tildu/Documents/GitHub/OpenGl/src/physics_engine/core/Engine.cpp"
-  "C:/Users/tildu/Documents/GitHub/OpenGl/src/physics_engine/core/UserInterface.cpp"
   "C:/Users/tildu/Documents/GitHub/OpenGl/src/physics_engine/error/ErrorHandler.cpp"
-  "C:/Users/tildu/Documents/GitHub/OpenGl/src/physics_engine/objects/shapes/GlCircle.cpp"
-  "C:/Users/tildu/Documents/GitHub/OpenGl/src/physics_engine/objects/shapes/GlRect.cpp"
-  "C:/Users/tildu/Documents/GitHub/OpenGl/src/physics_engine/objects/shapes/Text.cpp"
-  "C:/Users/tildu/Documents/GitHub/OpenGl/src/physics_engine/render/Renderer.cpp"
-  "C:/Users/tildu/Documents/GitHub/OpenGl/src/physics_engine/render/TextRenderer.cpp"
+  "C:/Users/tildu/Documents/GitHub/OpenGl/src/physics_engine/objects/GlShape.cpp"
+  "C:/Users/tildu/Documents/GitHub/OpenGl/src/physics_engine/objects/ShapeFactory.cpp"
+  "C:/Users/tildu/Documents/GitHub/OpenGl/src/physics_engine/rendering/IndexBuffer.cpp"
+  "C:/Users/tildu/Documents/GitHub/OpenGl/src/physics_engine/rendering/Renderer2D.cpp"
+  "C:/Users/tildu/Documents/GitHub/OpenGl/src/physics_engine/rendering/Shader.cpp"
+  "C:/Users/tildu/Documents/GitHub/OpenGl/src/physics_engine/rendering/VertexArray.cpp"
+  "C:/Users/tildu/Documents/GitHub/OpenGl/src/physics_engine/rendering/VertexBuffer.cpp"
+  "C:/Users/tildu/Documents/GitHub/OpenGl/src/ui/Button.cpp"
+  "C:/Users/tildu/Documents/GitHub/OpenGl/src/ui/UIElement.cpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")

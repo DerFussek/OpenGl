@@ -7,9 +7,10 @@
 #define GLCall(x) ErrorHandler::clearErrors();\
                     x;\
                     ASSERT(ErrorHandler::checkForErrors())
-
-class ErrorHandler {
-    public:
-        static void clearErrors();
-        static bool checkForErrors();
-};
+namespace PhyEn {
+    class ErrorHandler {
+        public:
+            static void clearErrors();
+            static bool checkForErrors();
+    };
+}
