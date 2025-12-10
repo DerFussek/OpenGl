@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "Debug/physics_app.exe"
+			"path" : "Release/physics_app.exe"
 		},
 		{
-			"path" : "Debug/physics_app.pdb"
+			"path" : "Release/physics_app.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -51,7 +51,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "/DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd"
+					"fragment" : "/DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -std:c++17 -MD"
 				}
 			],
 			"includes" : 
@@ -103,15 +103,15 @@
 			"id" : "freetype::@bdc1e324bbc9e3c81525"
 		},
 		{
-			"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df"
+			"backtrace" : 2,
+			"id" : "physics_engine::@6890427a1f51a3e7e1df"
 		},
 		{
 			"backtrace" : 2,
 			"id" : "glad::@6890427a1f51a3e7e1df"
 		},
 		{
-			"backtrace" : 2,
-			"id" : "physics_engine::@6890427a1f51a3e7e1df"
+			"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "physics_app::@6890427a1f51a3e7e1df",
@@ -120,11 +120,11 @@
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "/DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd",
+				"fragment" : "/DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MD",
 				"role" : "flags"
 			},
 			{
-				"fragment" : "/machine:x64 /debug /INCREMENTAL",
+				"fragment" : "/machine:x64 /INCREMENTAL:NO",
 				"role" : "flags"
 			},
 			{
@@ -133,12 +133,12 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "Debug\\physics_engine.lib",
+				"fragment" : "Release\\physics_engine.lib",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 3,
-				"fragment" : "Debug\\glad.lib",
+				"fragment" : "Release\\glad.lib",
 				"role" : "libraries"
 			},
 			{
@@ -153,7 +153,7 @@
 			},
 			{
 				"backtrace" : 3,
-				"fragment" : "freetype_build\\Debug\\freetyped.lib",
+				"fragment" : "freetype_build\\Release\\freetype.lib",
 				"role" : "libraries"
 			},
 			{

@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "Release/physics_app.exe"
+			"path" : "MinSizeRel/physics_app.exe"
 		},
 		{
-			"path" : "Release/physics_app.pdb"
+			"path" : "MinSizeRel/physics_app.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -51,7 +51,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "/DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -std:c++17 -MD"
+					"fragment" : "/DWIN32 /D_WINDOWS /EHsc /O1 /Ob1 /DNDEBUG -std:c++17 -MD"
 				}
 			],
 			"includes" : 
@@ -103,15 +103,15 @@
 			"id" : "freetype::@bdc1e324bbc9e3c81525"
 		},
 		{
-			"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df"
+			"backtrace" : 2,
+			"id" : "physics_engine::@6890427a1f51a3e7e1df"
 		},
 		{
 			"backtrace" : 2,
 			"id" : "glad::@6890427a1f51a3e7e1df"
 		},
 		{
-			"backtrace" : 2,
-			"id" : "physics_engine::@6890427a1f51a3e7e1df"
+			"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "physics_app::@6890427a1f51a3e7e1df",
@@ -120,7 +120,7 @@
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "/DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MD",
+				"fragment" : "/DWIN32 /D_WINDOWS /EHsc /O1 /Ob1 /DNDEBUG -MD",
 				"role" : "flags"
 			},
 			{
@@ -133,12 +133,12 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "Release\\physics_engine.lib",
+				"fragment" : "MinSizeRel\\physics_engine.lib",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 3,
-				"fragment" : "Release\\glad.lib",
+				"fragment" : "MinSizeRel\\glad.lib",
 				"role" : "libraries"
 			},
 			{
@@ -153,7 +153,7 @@
 			},
 			{
 				"backtrace" : 3,
-				"fragment" : "freetype_build\\Release\\freetype.lib",
+				"fragment" : "freetype_build\\MinSizeRel\\freetype.lib",
 				"role" : "libraries"
 			},
 			{

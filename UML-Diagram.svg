@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="1027px" preserveAspectRatio="none" style="width:2397px;height:1027px;background:#FFFFFF;" version="1.1" viewBox="0 0 2397 1027" width="2397px" zoomAndPan="magnify"><defs/><g><!--MD5=[630deb9ca358f01922be9b487b80131a]
+class Drawable--><g id="elem_Drawable"><rect codeLine="4" fill="#F1F1F1" height="64.2969" id="Drawable" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="227" x="843" y="439"/><ellipse cx="920.25" cy="455" fill="#B4A7E5" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M916.1719,450.7656 L916.1719,448.6094 L923.5625,448.6094 L923.5625,450.7656 L921.0938,450.7656 L921.0938,458.8438 L923.5625,458.8438 L923.5625,461 L916.1719,461 L916.1719,458.8438 L918.6406,458.8438 L918.6406,450.7656 L916.1719,450.7656 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="64" x="940.75" y="459.8467">Drawable</text><line style="stroke:#181818;stroke-width:0.5;" x1="844" x2="1069" y1="471" y2="471"/><line style="stroke:#181818;stroke-width:0.5;" x1="844" x2="1069" y1="479" y2="479"/><ellipse cx="854" cy="492.6484" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="201" x="863" y="495.9951">draw(renderer : Renderer2D)</text></g><!--MD5=[8336922478991a54f539d469b4e48cc0]
+class Updateable--><g id="elem_Updateable"><rect codeLine="8" fill="#F1F1F1" height="64.2969" id="Updateable" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="141" x="1477" y="39"/><ellipse cx="1505.5" cy="55" fill="#B4A7E5" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M1501.4219,50.7656 L1501.4219,48.6094 L1508.8125,48.6094 L1508.8125,50.7656 L1506.3438,50.7656 L1506.3438,58.8438 L1508.8125,58.8438 L1508.8125,61 L1501.4219,61 L1501.4219,58.8438 L1503.8906,58.8438 L1503.8906,50.7656 L1501.4219,50.7656 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="79" x="1522.5" y="59.8467">Updateable</text><line style="stroke:#181818;stroke-width:0.5;" x1="1478" x2="1617" y1="71" y2="71"/><line style="stroke:#181818;stroke-width:0.5;" x1="1478" x2="1617" y1="79" y2="79"/><ellipse cx="1488" cy="92.6484" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="115" x="1497" y="95.9951">update(dt : float)</text></g><!--MD5=[03b04ed89c1f7ac76f6e629bfb39a406]
+class Shader--><g id="elem_Shader"><rect codeLine="13" fill="#F1F1F1" height="227.2656" id="Shader" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="449" x="732" y="793.5"/><ellipse cx="927.75" cy="809.5" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M930.7188,815.1406 Q930.1406,815.4375 929.5,815.5781 Q928.8594,815.7344 928.1563,815.7344 Q925.6563,815.7344 924.3281,814.0938 Q923.0156,812.4375 923.0156,809.3125 Q923.0156,806.1875 924.3281,804.5313 Q925.6563,802.875 928.1563,802.875 Q928.8594,802.875 929.5,803.0313 Q930.1563,803.1875 930.7188,803.4844 L930.7188,806.2031 Q930.0938,805.625 929.5,805.3594 Q928.9063,805.0781 928.2813,805.0781 Q926.9375,805.0781 926.25,806.1563 Q925.5625,807.2188 925.5625,809.3125 Q925.5625,811.4063 926.25,812.4844 Q926.9375,813.5469 928.2813,813.5469 Q928.9063,813.5469 929.5,813.2813 Q930.0938,813 930.7188,812.4219 L930.7188,815.1406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="49" x="948.25" y="814.3467">Shader</text><line style="stroke:#181818;stroke-width:0.5;" x1="733" x2="1180" y1="825.5" y2="825.5"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="740" y="836.1484"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="133" x="752" y="842.4951">m_rendererID : uint</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="740" y="852.4453"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="301" x="752" y="858.792">m_uniformLocationCache : Map&lt;String,int&gt;</text><line style="stroke:#181818;stroke-width:0.5;" x1="733" x2="1180" y1="866.0938" y2="866.0938"/><ellipse cx="743" cy="879.7422" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="339" x="752" y="883.0889">Shader(vertexPath : String, fragmentPath : String)</text><ellipse cx="743" cy="896.0391" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="40" x="752" y="899.3857">bind()</text><ellipse cx="743" cy="912.3359" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="58" x="752" y="915.6826">unbind()</text><ellipse cx="743" cy="928.6328" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="234" x="752" y="931.9795">setUniform1i(name : String, v : int)</text><ellipse cx="743" cy="944.9297" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="247" x="752" y="948.2764">setUniform1f(name : String, v : float)</text><ellipse cx="743" cy="961.2266" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="304" x="752" y="964.5732">setUniform2f(name : String, x : float, y : float)</text><ellipse cx="743" cy="977.5234" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="362" x="752" y="980.8701">setUniform3f(name : String, x : float, y : float, z : float)</text><ellipse cx="743" cy="993.8203" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="423" x="752" y="997.167">setUniform4f(name : String, x : float, y : float, z : float, w : float)</text><ellipse cx="743" cy="1010.1172" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="284" x="752" y="1013.4639">setUniformMat4f(name : String, m : mat4)</text></g><!--MD5=[508e1d8f7fbee6c929d18c37cac8273e]
+class Renderer2D--><g id="elem_Renderer2D"><rect codeLine="27" fill="#F1F1F1" height="145.7813" id="Renderer2D" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="275" x="335" y="687"/><ellipse cx="425.75" cy="703" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M428.7188,708.6406 Q428.1406,708.9375 427.5,709.0781 Q426.8594,709.2344 426.1563,709.2344 Q423.6563,709.2344 422.3281,707.5938 Q421.0156,705.9375 421.0156,702.8125 Q421.0156,699.6875 422.3281,698.0313 Q423.6563,696.375 426.1563,696.375 Q426.8594,696.375 427.5,696.5313 Q428.1563,696.6875 428.7188,696.9844 L428.7188,699.7031 Q428.0938,699.125 427.5,698.8594 Q426.9063,698.5781 426.2813,698.5781 Q424.9375,698.5781 424.25,699.6563 Q423.5625,700.7188 423.5625,702.8125 Q423.5625,704.9063 424.25,705.9844 Q424.9375,707.0469 426.2813,707.0469 Q426.9063,707.0469 427.5,706.7813 Q428.0938,706.5 428.7188,705.9219 L428.7188,708.6406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="85" x="446.25" y="707.8467">Renderer2D</text><line style="stroke:#181818;stroke-width:0.5;" x1="336" x2="609" y1="719" y2="719"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="343" y="729.6484"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="174" x="355" y="735.9951">m_shapeShader : Shader</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="343" y="745.9453"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="124" x="355" y="752.292">m_viewProj : mat4</text><line style="stroke:#181818;stroke-width:0.5;" x1="336" x2="609" y1="759.5938" y2="759.5938"/><ellipse cx="346" cy="773.2422" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="249" x="355" y="776.5889">Renderer2D(shapeShader : Shader)</text><ellipse cx="346" cy="789.5391" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="153" x="355" y="792.8857">begin(viewProj : mat4)</text><ellipse cx="346" cy="805.8359" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="171" x="355" y="809.1826">submit(shape : GlShape)</text><ellipse cx="346" cy="822.1328" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="37" x="355" y="825.4795">end()</text></g><!--MD5=[76a72ea347d49db94619af7315df3bb5]
+class ShapeVertex--><g id="elem_ShapeVertex"><rect codeLine="37" fill="#F1F1F1" height="80.5938" id="ShapeVertex" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="135" x="73" y="587.5"/><ellipse cx="94.75" cy="603.5" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M97.7188,609.1406 Q97.1406,609.4375 96.5,609.5781 Q95.8594,609.7344 95.1563,609.7344 Q92.6563,609.7344 91.3281,608.0938 Q90.0156,606.4375 90.0156,603.3125 Q90.0156,600.1875 91.3281,598.5313 Q92.6563,596.875 95.1563,596.875 Q95.8594,596.875 96.5,597.0313 Q97.1563,597.1875 97.7188,597.4844 L97.7188,600.2031 Q97.0938,599.625 96.5,599.3594 Q95.9063,599.0781 95.2813,599.0781 Q93.9375,599.0781 93.25,600.1563 Q92.5625,601.2188 92.5625,603.3125 Q92.5625,605.4063 93.25,606.4844 Q93.9375,607.5469 95.2813,607.5469 Q95.9063,607.5469 96.5,607.2813 Q97.0938,607 97.7188,606.4219 L97.7188,609.1406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="88" x="110.25" y="608.3467">ShapeVertex</text><line style="stroke:#181818;stroke-width:0.5;" x1="74" x2="207" y1="619.5" y2="619.5"/><ellipse cx="84" cy="633.1484" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="101" x="93" y="636.4951">position : vec2</text><ellipse cx="84" cy="649.4453" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="109" x="93" y="652.792">texCoord : vec2</text><line style="stroke:#181818;stroke-width:0.5;" x1="74" x2="207" y1="660.0938" y2="660.0938"/></g><!--MD5=[cf7d85c9df2be53c44651490f3ca26fc]
+class GlShape--><g id="elem_GlShape"><rect codeLine="42" fill="#F1F1F1" height="357.6406" id="GlShape" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="422" x="1938" y="292"/><ellipse cx="2115.75" cy="308" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M2118.7188,313.6406 Q2118.1406,313.9375 2117.5,314.0781 Q2116.8594,314.2344 2116.1563,314.2344 Q2113.6563,314.2344 2112.3281,312.5938 Q2111.0156,310.9375 2111.0156,307.8125 Q2111.0156,304.6875 2112.3281,303.0313 Q2113.6563,301.375 2116.1563,301.375 Q2116.8594,301.375 2117.5,301.5313 Q2118.1563,301.6875 2118.7188,301.9844 L2118.7188,304.7031 Q2118.0938,304.125 2117.5,303.8594 Q2116.9063,303.5781 2116.2813,303.5781 Q2114.9375,303.5781 2114.25,304.6563 Q2113.5625,305.7188 2113.5625,307.8125 Q2113.5625,309.9063 2114.25,310.9844 Q2114.9375,312.0469 2116.2813,312.0469 Q2116.9063,312.0469 2117.5,311.7813 Q2118.0938,311.5 2118.7188,310.9219 L2118.7188,313.6406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="58" x="2136.25" y="312.8467">GlShape</text><line style="stroke:#181818;stroke-width:0.5;" x1="1939" x2="2359" y1="324" y2="324"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="1946" y="334.6484"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="135" x="1958" y="340.9951">m_vao : VertexArray</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="1946" y="350.9453"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="143" x="1958" y="357.292">m_vbo : VertexBuffer</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="1946" y="367.2422"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="132" x="1958" y="373.5889">m_ibo : IndexBuffer</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="1946" y="383.5391"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="121" x="1958" y="389.8857">m_position : vec2</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="1946" y="399.8359"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="102" x="1958" y="406.1826">m_scale : vec2</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="1946" y="416.1328"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="115" x="1958" y="422.4795">m_rotation : float</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="1946" y="432.4297"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="100" x="1958" y="438.7764">m_color : vec4</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="242" x="1958" y="455.0732">indices : uint[], indexCount : size_t,</text><line style="stroke:#181818;stroke-width:0.5;" x1="1939" x2="2359" y1="462.375" y2="462.375"/><ellipse cx="1949" cy="476.0234" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="377" x="1958" y="479.3701">GlShape(vertices : ShapeVertex[], vertexCount : size_t,</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="85" x="1958" y="495.667">color : vec4)</text><ellipse cx="1949" cy="508.6172" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="396" x="1958" y="511.9639">setTransform(position : vec2, rotation : float, scale : vec2)</text><ellipse cx="1949" cy="524.9141" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="148" x="1958" y="528.2607">setColor(color : vec4)</text><ellipse cx="1949" cy="541.2109" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="111" x="1958" y="544.5576">position() : vec2</text><ellipse cx="1949" cy="557.5078" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="105" x="1958" y="560.8545">rotation() : float</text><ellipse cx="1949" cy="573.8047" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="92" x="1958" y="577.1514">scale() : vec2</text><ellipse cx="1949" cy="590.1016" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="90" x="1958" y="593.4482">color() : vec4</text><ellipse cx="1949" cy="606.3984" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="125" x="1958" y="609.7451">vao() : VertexArray</text><ellipse cx="1949" cy="622.6953" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="122" x="1958" y="626.042">ibo() : IndexBuffer</text><ellipse cx="1949" cy="638.9922" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="201" x="1958" y="642.3389">draw(renderer : Renderer2D)</text></g><!--MD5=[1c573188985f4c75505740d1b2f472b4]
+class ShapeFactory--><g id="elem_ShapeFactory"><rect codeLine="64" fill="#F1F1F1" height="80.5938" id="ShapeFactory" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="469" x="1313" y="319.5"/><ellipse cx="1496.25" cy="335.5" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M1499.2188,341.1406 Q1498.6406,341.4375 1498,341.5781 Q1497.3594,341.7344 1496.6563,341.7344 Q1494.1563,341.7344 1492.8281,340.0938 Q1491.5156,338.4375 1491.5156,335.3125 Q1491.5156,332.1875 1492.8281,330.5313 Q1494.1563,328.875 1496.6563,328.875 Q1497.3594,328.875 1498,329.0313 Q1498.6563,329.1875 1499.2188,329.4844 L1499.2188,332.2031 Q1498.5938,331.625 1498,331.3594 Q1497.4063,331.0781 1496.7813,331.0781 Q1495.4375,331.0781 1494.75,332.1563 Q1494.0625,333.2188 1494.0625,335.3125 Q1494.0625,337.4063 1494.75,338.4844 Q1495.4375,339.5469 1496.7813,339.5469 Q1497.4063,339.5469 1498,339.2813 Q1498.5938,339 1499.2188,338.4219 L1499.2188,341.1406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="94" x="1516.75" y="340.3467">ShapeFactory</text><line style="stroke:#181818;stroke-width:0.5;" x1="1314" x2="1781" y1="351.5" y2="351.5"/><line style="stroke:#181818;stroke-width:0.5;" x1="1314" x2="1781" y1="359.5" y2="359.5"/><ellipse cx="1324" cy="373.1484" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="319" x="1333" y="376.4951">createRect(size : vec2, color : vec4) : GlShape</text><ellipse cx="1324" cy="389.4453" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="443" x="1333" y="392.792">createCircle(radius : float, segments : int, color : vec4) : GlShape</text></g><!--MD5=[a7f9118cae7621dd25d25149752faef0]
+class Circle--><g id="elem_Circle"><rect codeLine="69" fill="#F1F1F1" height="145.7813" id="Circle" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="501" x="1297" y="541"/><ellipse cx="1524.25" cy="557" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M1527.2188,562.6406 Q1526.6406,562.9375 1526,563.0781 Q1525.3594,563.2344 1524.6563,563.2344 Q1522.1563,563.2344 1520.8281,561.5938 Q1519.5156,559.9375 1519.5156,556.8125 Q1519.5156,553.6875 1520.8281,552.0313 Q1522.1563,550.375 1524.6563,550.375 Q1525.3594,550.375 1526,550.5313 Q1526.6563,550.6875 1527.2188,550.9844 L1527.2188,553.7031 Q1526.5938,553.125 1526,552.8594 Q1525.4063,552.5781 1524.7813,552.5781 Q1523.4375,552.5781 1522.75,553.6563 Q1522.0625,554.7188 1522.0625,556.8125 Q1522.0625,558.9063 1522.75,559.9844 Q1523.4375,561.0469 1524.7813,561.0469 Q1525.4063,561.0469 1526,560.7813 Q1526.5938,560.5 1527.2188,559.9219 L1527.2188,562.6406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="38" x="1544.75" y="561.8467">Circle</text><line style="stroke:#181818;stroke-width:0.5;" x1="1298" x2="1797" y1="573" y2="573"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="1305" y="583.6484"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="134" x="1317" y="589.9951">m_shape : GlShape</text><line style="stroke:#181818;stroke-width:0.5;" x1="1298" x2="1797" y1="597.2969" y2="597.2969"/><ellipse cx="1308" cy="610.9453" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="475" x="1317" y="614.292">Circle(radius : float, position : vec2, color : vec4, segments : int = 32)</text><ellipse cx="1308" cy="627.2422" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="142" x="1317" y="630.5889">setPosition(p : vec2)</text><ellipse cx="1308" cy="643.5391" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="272" x="1317" y="646.8857">setRadius(r : float, segments : int = 32)</text><ellipse cx="1308" cy="659.8359" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="122" x="1317" y="663.1826">setColor(c : vec4)</text><ellipse cx="1308" cy="676.1328" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="201" x="1317" y="679.4795">draw(renderer : Renderer2D)</text></g><!--MD5=[a49b7276910d6619e9702881d69ae75a]
+class UIElement--><g id="elem_UIElement"><rect codeLine="79" fill="#F1F1F1" height="145.7813" id="UIElement" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="377" x="1359" y="138"/><ellipse cx="1508.25" cy="154" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M1511.2188,159.6406 Q1510.6406,159.9375 1510,160.0781 Q1509.3594,160.2344 1508.6563,160.2344 Q1506.1563,160.2344 1504.8281,158.5938 Q1503.5156,156.9375 1503.5156,153.8125 Q1503.5156,150.6875 1504.8281,149.0313 Q1506.1563,147.375 1508.6563,147.375 Q1509.3594,147.375 1510,147.5313 Q1510.6563,147.6875 1511.2188,147.9844 L1511.2188,150.7031 Q1510.5938,150.125 1510,149.8594 Q1509.4063,149.5781 1508.7813,149.5781 Q1507.4375,149.5781 1506.75,150.6563 Q1506.0625,151.7188 1506.0625,153.8125 Q1506.0625,155.9063 1506.75,156.9844 Q1507.4375,158.0469 1508.7813,158.0469 Q1509.4063,158.0469 1510,157.7813 Q1510.5938,157.5 1511.2188,156.9219 L1511.2188,159.6406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="70" x="1528.75" y="158.8467">UIElement</text><line style="stroke:#181818;stroke-width:0.5;" x1="1360" x2="1735" y1="170" y2="170"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="1367" y="180.6484"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="134" x="1379" y="186.9951">m_shape : GlShape</text><line style="stroke:#181818;stroke-width:0.5;" x1="1360" x2="1735" y1="194.2969" y2="194.2969"/><ellipse cx="1370" cy="207.9453" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="351" x="1379" y="211.292">UIElement(position : vec2, size : vec2, color : vec4)</text><ellipse cx="1370" cy="224.2422" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="159" x="1379" y="227.5889">setPosition(pos : vec2)</text><ellipse cx="1370" cy="240.5391" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="135" x="1379" y="243.8857">setSize(size : vec2)</text><ellipse cx="1370" cy="256.8359" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="148" x="1379" y="260.1826">setColor(color : vec4)</text><ellipse cx="1370" cy="273.1328" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="201" x="1379" y="276.4795">draw(renderer : Renderer2D)</text></g><!--MD5=[0174392a0c212c3b3e97bee69152624c]
+class Panel--><g id="elem_Panel"><rect codeLine="88" fill="#F1F1F1" height="48" id="Panel" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="70" x="2114" y="197"/><ellipse cx="2129" cy="213" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M2131.9688,218.6406 Q2131.3906,218.9375 2130.75,219.0781 Q2130.1094,219.2344 2129.4063,219.2344 Q2126.9063,219.2344 2125.5781,217.5938 Q2124.2656,215.9375 2124.2656,212.8125 Q2124.2656,209.6875 2125.5781,208.0313 Q2126.9063,206.375 2129.4063,206.375 Q2130.1094,206.375 2130.75,206.5313 Q2131.4063,206.6875 2131.9688,206.9844 L2131.9688,209.7031 Q2131.3438,209.125 2130.75,208.8594 Q2130.1563,208.5781 2129.5313,208.5781 Q2128.1875,208.5781 2127.5,209.6563 Q2126.8125,210.7188 2126.8125,212.8125 Q2126.8125,214.9063 2127.5,215.9844 Q2128.1875,217.0469 2129.5313,217.0469 Q2130.1563,217.0469 2130.75,216.7813 Q2131.3438,216.5 2131.9688,215.9219 L2131.9688,218.6406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="38" x="2143" y="217.8467">Panel</text><line style="stroke:#181818;stroke-width:0.5;" x1="2115" x2="2183" y1="229" y2="229"/><line style="stroke:#181818;stroke-width:0.5;" x1="2115" x2="2183" y1="237" y2="237"/></g><!--MD5=[90ba54f54370e77ef24813dec6818fa3]
+class Button--><g id="elem_Button"><rect codeLine="91" fill="#F1F1F1" height="145.7813" id="Button" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="482" x="1908" y="7"/><ellipse cx="2121.25" cy="23" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M2124.2188,28.6406 Q2123.6406,28.9375 2123,29.0781 Q2122.3594,29.2344 2121.6563,29.2344 Q2119.1563,29.2344 2117.8281,27.5938 Q2116.5156,25.9375 2116.5156,22.8125 Q2116.5156,19.6875 2117.8281,18.0313 Q2119.1563,16.375 2121.6563,16.375 Q2122.3594,16.375 2123,16.5313 Q2123.6563,16.6875 2124.2188,16.9844 L2124.2188,19.7031 Q2123.5938,19.125 2123,18.8594 Q2122.4063,18.5781 2121.7813,18.5781 Q2120.4375,18.5781 2119.75,19.6563 Q2119.0625,20.7188 2119.0625,22.8125 Q2119.0625,24.9063 2119.75,25.9844 Q2120.4375,27.0469 2121.7813,27.0469 Q2122.4063,27.0469 2123,26.7813 Q2123.5938,26.5 2124.2188,25.9219 L2124.2188,28.6406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="47" x="2141.75" y="27.8467">Button</text><line style="stroke:#181818;stroke-width:0.5;" x1="1909" x2="2389" y1="39" y2="39"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="1916" y="49.6484"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="140" x="1928" y="55.9951">m_onClick : Callback</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="1916" y="65.9453"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="120" x="1928" y="72.292">m_hovered : bool</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="1916" y="82.2422"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="120" x="1928" y="88.5889">m_pressed : bool</text><line style="stroke:#181818;stroke-width:0.5;" x1="1909" x2="2389" y1="95.8906" y2="95.8906"/><ellipse cx="1919" cy="109.5391" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="456" x="1928" y="112.8857">Button(position : vec2, size : vec2, color : vec4, onClick : Callback)</text><ellipse cx="1919" cy="125.8359" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="115" x="1928" y="129.1826">update(dt : float)</text><ellipse cx="1919" cy="142.1328" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="342" x="1928" y="145.4795">onMouseEvent(mousePos : vec2, pressed : bool)</text></g><!--MD5=[8d3329adb84a4bb7bd76afc0c995588e]
+class ObjectManager--><g id="elem_ObjectManager"><rect codeLine="101" fill="#F1F1F1" height="178.375" id="ObjectManager" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="271" x="337" y="382"/><ellipse cx="415.75" cy="398" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M418.7188,403.6406 Q418.1406,403.9375 417.5,404.0781 Q416.8594,404.2344 416.1563,404.2344 Q413.6563,404.2344 412.3281,402.5938 Q411.0156,400.9375 411.0156,397.8125 Q411.0156,394.6875 412.3281,393.0313 Q413.6563,391.375 416.1563,391.375 Q416.8594,391.375 417.5,391.5313 Q418.1563,391.6875 418.7188,391.9844 L418.7188,394.7031 Q418.0938,394.125 417.5,393.8594 Q416.9063,393.5781 416.2813,393.5781 Q414.9375,393.5781 414.25,394.6563 Q413.5625,395.7188 413.5625,397.8125 Q413.5625,399.9063 414.25,400.9844 Q414.9375,402.0469 416.2813,402.0469 Q416.9063,402.0469 417.5,401.7813 Q418.0938,401.5 418.7188,400.9219 L418.7188,403.6406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="105" x="436.25" y="402.8467">ObjectManager</text><line style="stroke:#181818;stroke-width:0.5;" x1="338" x2="607" y1="414" y2="414"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="345" y="424.6484"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="214" x="357" y="430.9951">m_drawables : List&lt;Drawable&gt;</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="345" y="440.9453"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="245" x="357" y="447.292">m_updateables : List&lt;Updateable&gt;</text><line style="stroke:#181818;stroke-width:0.5;" x1="338" x2="607" y1="454.5938" y2="454.5938"/><ellipse cx="348" cy="468.2422" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="193" x="357" y="471.5889">createDrawable&lt;T&gt;(args...)</text><ellipse cx="348" cy="484.5391" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="208" x="357" y="487.8857">createUpdateable&lt;T&gt;(args...)</text><ellipse cx="348" cy="500.8359" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="198" x="357" y="504.1826">addDrawable(obj : Drawable)</text><ellipse cx="348" cy="517.1328" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="228" x="357" y="520.4795">addUpdateable(obj : Updateable)</text><ellipse cx="348" cy="533.4297" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="130" x="357" y="536.7764">updateAll(dt : float)</text><ellipse cx="348" cy="549.7266" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="216" x="357" y="553.0732">drawAll(renderer : Renderer2D)</text></g><!--MD5=[c86ce95fe6226f2d2796c0513d8e83fe]
+class Engine--><g id="elem_Engine"><rect codeLine="113" fill="#F1F1F1" height="113.1875" id="Engine" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="267" x="7" y="703.5"/><ellipse cx="112.25" cy="719.5" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M115.2188,725.1406 Q114.6406,725.4375 114,725.5781 Q113.3594,725.7344 112.6563,725.7344 Q110.1563,725.7344 108.8281,724.0938 Q107.5156,722.4375 107.5156,719.3125 Q107.5156,716.1875 108.8281,714.5313 Q110.1563,712.875 112.6563,712.875 Q113.3594,712.875 114,713.0313 Q114.6563,713.1875 115.2188,713.4844 L115.2188,716.2031 Q114.5938,715.625 114,715.3594 Q113.4063,715.0781 112.7813,715.0781 Q111.4375,715.0781 110.75,716.1563 Q110.0625,717.2188 110.0625,719.3125 Q110.0625,721.4063 110.75,722.4844 Q111.4375,723.5469 112.7813,723.5469 Q113.4063,723.5469 114,723.2813 Q114.5938,723 115.2188,722.4219 L115.2188,725.1406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="48" x="132.75" y="724.3467">Engine</text><line style="stroke:#181818;stroke-width:0.5;" x1="8" x2="273" y1="735.5" y2="735.5"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="746.1484"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="241" x="27" y="752.4951">m_objectManager : ObjectManager</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="762.4453"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="198" x="27" y="768.792">m_renderer2D : Renderer2D</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="778.7422"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="174" x="27" y="785.0889">m_shapeShader : Shader</text><line style="stroke:#181818;stroke-width:0.5;" x1="8" x2="273" y1="792.3906" y2="792.3906"/><ellipse cx="18" cy="806.0391" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="33" x="27" y="809.3857">run()</text></g><!--MD5=[cd7426527faa29879ddbfc89a4ff38e4]
+reverse link Drawable to GlShape--><g id="link_Drawable_GlShape"><path d="M1090.22,479.39 C1295.82,484.61 1693.04,485.14 1937.9,481 " fill="none" id="Drawable-backto-GlShape" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="1089.84,486.38,1070.04,478.85,1090.22,472.39,1089.84,486.38" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[cd7426527faa29879ddbfc89a4ff38e4]
+reverse link Drawable to GlShape--><g id="link_Drawable_GlShape"><path codeLine="122" d="M1090.22,462.11 C1295.82,456.59 1693.04,456.03 1937.9,460.42 " fill="none" id="Drawable-backto-GlShape-1" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="1090.23,469.12,1070.04,462.69,1089.83,455.12,1090.23,469.12" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[68576b0b63db5f728234a1c4bf69e1d8]
+reverse link Drawable to Circle--><g id="link_Drawable_Circle"><path d="M1069.53,508.46 C1133.94,526.14 1217.58,547.23 1296.8,565.99 " fill="none" id="Drawable-backto-Circle" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="1067.58,515.18,1050.18,503.09,1071.32,501.69,1067.58,515.18" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[68576b0b63db5f728234a1c4bf69e1d8]
+reverse link Drawable to Circle--><g id="link_Drawable_Circle"><path codeLine="124" d="M1089.71,491.62 C1151.94,505 1228.24,522.9 1300.52,540.94 " fill="none" id="Drawable-backto-Circle-1" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="1088.13,498.44,1070.02,487.44,1091.04,484.74,1088.13,498.44" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[d8ef010a3f0a9fb474f799b3743c21ec]
+reverse link Drawable to UIElement--><g id="link_Drawable_UIElement"><path d="M1061.25,430.17 C1127.75,397.98 1216.41,353.63 1297,319 C1324.75,307.08 1354.63,295.3 1383.74,284.09 " fill="none" id="Drawable-backto-UIElement" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="1064.17,436.53,1043.11,438.9,1058.09,423.92,1064.17,436.53" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[d8ef010a3f0a9fb474f799b3743c21ec]
+reverse link Drawable to UIElement--><g id="link_Drawable_UIElement"><path codeLine="123" d="M1012.78,428.28 C1079.24,387.67 1194.63,327.99 1297,284 C1316.91,275.45 1337.92,266.96 1358.95,258.93 " fill="none" id="Drawable-backto-UIElement-1" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="1016.45,434.24,995.78,438.94,1009.01,422.38,1016.45,434.24" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[8ddc7485cba5accbd5545b88bd23439c]
+reverse link UIElement to Panel--><g id="link_UIElement_Panel"><path d="M1756.17,226.66 C1887.72,230.48 2045.48,231.15 2113.74,226.76 " fill="none" id="UIElement-backto-Panel" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="none" points="1755.91,233.66,1736.13,226.05,1756.33,219.67,1755.91,233.66" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[8ddc7485cba5accbd5545b88bd23439c]
+reverse link UIElement to Panel--><g id="link_UIElement_Panel"><path codeLine="128" d="M1756.17,201.55 C1887.72,202.03 2045.48,206.73 2113.74,213.73 " fill="none" id="UIElement-backto-Panel-1" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="none" points="1756.12,208.55,1736.13,201.51,1756.14,194.55,1756.12,208.55" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[928b08fa75d5bb6fceb600003c1d0d5e]
+reverse link UIElement to Button--><g id="link_UIElement_Button"><path d="M1755.82,177.89 C1804.87,167.78 1857.59,156.37 1907.96,144.98 " fill="none" id="UIElement-backto-Button" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="none" points="1757.13,184.77,1736.13,181.92,1754.32,171.05,1757.13,184.77" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[928b08fa75d5bb6fceb600003c1d0d5e]
+reverse link UIElement to Button--><g id="link_UIElement_Button"><path codeLine="129" d="M1755.82,152.79 C1804.87,141.42 1857.59,129.79 1907.96,119.19 " fill="none" id="UIElement-backto-Button-1" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="none" points="1757.2,159.65,1736.13,157.38,1754.02,146.02,1757.2,159.65" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[262953116b601a3cfe8cf11ecf0f3a66]
+reverse link Updateable to Button--><g id="link_Updateable_Button"><path d="M1638.31,81.76 C1709.65,85.64 1812.86,88.22 1907.78,88.92 " fill="none" id="Updateable-backto-Button" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="1637.7,88.74,1618.15,80.58,1638.53,74.76,1637.7,88.74" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[262953116b601a3cfe8cf11ecf0f3a66]
+reverse link Updateable to Button--><g id="link_Updateable_Button"><path codeLine="126" d="M1638.31,62.38 C1709.65,60.48 1812.86,60.94 1907.78,63.13 " fill="none" id="Updateable-backto-Button-1" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="1638.36,69.38,1618.15,63.01,1637.92,55.39,1638.36,69.38" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[20d7a3e96af3fa734bea7829632cda4b]
+link Renderer2D to Shader--><g id="link_Renderer2D_Shader"><path codeLine="131" d="M610.01,801.63 C646.52,812.77 687,825.11 727.02,837.32 " fill="none" id="Renderer2D-to-Shader" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="731.9,838.81,724.4553,832.362,727.1168,837.3536,722.1251,840.0151,731.9,838.81" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="30" x="656" y="807.0669">uses</text></g><!--MD5=[21acc6197cf82e8218b6128afecadef1]
+link Renderer2D to GlShape--><g id="link_Renderer2D_GlShape"><path codeLine="132" d="M610.25,763.63 C902.84,769.89 1580.64,775.92 1798,705 C1844.52,689.82 1890.65,666.57 1933.41,640.52 " fill="none" id="Renderer2D-to-GlShape" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="1937.8,637.83,1928.0375,639.1311,1933.5393,640.4465,1932.2239,645.9483,1937.8,637.83" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="54" x="1212" y="758.0669">submit()</text></g><!--MD5=[55f2dd6d6db9988d5f41b6dfced79b53]
+link ShapeFactory to GlShape--><g id="link_ShapeFactory_GlShape"><path codeLine="134" d="M1767.48,400.54 C1821.27,410.5 1878.81,421.16 1932.43,431.09 " fill="none" id="ShapeFactory-to-GlShape" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="1937.61,432.05,1929.4906,426.4755,1932.6939,431.138,1928.0314,434.3413,1937.61,432.05" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="48" x="1829" y="409.0669">creates</text></g><!--MD5=[0e24f38efbdfc24182acd80c22d9b785]
+reverse link Circle to GlShape--><g id="link_Circle_GlShape"><path codeLine="136" d="M1811.22,551.33 C1853.63,541.22 1897.03,530.86 1937.98,521.1 " fill="none" id="Circle-backto-GlShape" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="1798.4,554.39,1805.1641,556.8894,1810.0728,551.607,1803.3087,549.1076,1798.4,554.39" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[d37905465d88c96f5cc43e70faeada0a]
+reverse link UIElement to GlShape--><g id="link_UIElement_GlShape"><path codeLine="137" d="M1748.54,281.94 C1765.35,288.52 1782.02,295.25 1798,302 C1843.68,321.3 1891.99,343.45 1937.64,365.22 " fill="none" id="UIElement-backto-GlShape" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="1736.28,277.19,1740.4209,283.0936,1747.4631,281.5419,1743.3222,275.6383,1736.28,277.19" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[6947102cdab2617e0b71bdbca0b28370]
+reverse link ObjectManager to Drawable--><g id="link_ObjectManager_Drawable"><path codeLine="139" d="M621.25,471 C692.59,471 776.82,471 842.88,471 " fill="none" id="ObjectManager-backto-Drawable" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="608.08,471,614.08,475,620.08,471,614.08,467,608.08,471" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="60" x="641" y="467.0669">manages</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="616.1495" y="483.4935">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="7" x="828.011" y="483.5653">*</text></g><!--MD5=[7709ad45df4661847ce4353d7e05ce97]
+reverse link ObjectManager to Updateable--><g id="link_ObjectManager_Updateable"><path codeLine="140" d="M620.23,397.35 C782.27,318.67 1052.63,195.17 1297,120 C1356.6,101.67 1426.38,88.65 1476.97,80.66 " fill="none" id="ObjectManager-backto-Updateable" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="608.27,403.17,615.4153,404.1418,619.0605,397.9198,611.9152,396.9481,608.27,403.17" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="60" x="926.5" y="159.0669">manages</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="615.9137" y="411.931">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="7" x="1461.873" y="94.5948">*</text></g><!--MD5=[7c7b541927ece28c3a3ab921b76863df]
+link Engine to ObjectManager--><g id="link_Engine_ObjectManager"><path codeLine="142" d="M249.7,703.46 C258.14,697.88 266.35,692.04 274,686 C318.98,650.47 362.77,604.36 397.64,563.97 " fill="none" id="Engine-to-ObjectManager" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="400.98,560.08,392.0859,564.3101,397.726,563.8763,398.1599,569.5165,400.98,560.08" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[553f95c1003595a5dc8e81d39a0def60]
+link Engine to Renderer2D--><g id="link_Engine_Renderer2D"><path codeLine="143" d="M274.3,760 C292.55,760 311.35,760 329.76,760 " fill="none" id="Engine-to-Renderer2D" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="334.94,760,325.94,756,329.94,760,325.94,764,334.94,760" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[13833a559944fa502c6af1becc85cacc]
+link Engine to Shader--><g id="link_Engine_Shader"><path codeLine="144" d="M244.4,816.51 C272.98,829.94 304.55,842.74 335,851 C461.78,885.38 607.92,899.74 726.51,905.34 " fill="none" id="Engine-to-Shader" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="731.78,905.59,722.9726,901.182,726.7852,905.361,722.6063,909.1736,731.78,905.59" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[5af9d73cfeac0687b7be6f38c2630f86]
+@startuml
+left to right direction
+
+' Basis-Interfaces
+interface Drawable {
+  +draw(renderer : Renderer2D)
+}
+
+interface Updateable {
+  +update(dt : float)
+}
+
+' Shader + Rendering
+class Shader {
+  -m_rendererID : uint
+  -m_uniformLocationCache : Map<String,int>
+  +Shader(vertexPath : String, fragmentPath : String)
+  +bind()
+  +unbind()
+  +setUniform1i(name : String, v : int)
+  +setUniform1f(name : String, v : float)
+  +setUniform2f(name : String, x : float, y : float)
+  +setUniform3f(name : String, x : float, y : float, z : float)
+  +setUniform4f(name : String, x : float, y : float, z : float, w : float)
+  +setUniformMat4f(name : String, m : mat4)
+}
+
+class Renderer2D {
+  -m_shapeShader : Shader
+  -m_viewProj : mat4
+  +Renderer2D(shapeShader : Shader)
+  +begin(viewProj : mat4)
+  +submit(shape : GlShape)
+  +end()
+}
+
+' Geometry / Shapes
+class ShapeVertex {
+  +position : vec2
+  +texCoord : vec2
+}
+
+class GlShape implements Drawable {
+  -m_vao : VertexArray
+  -m_vbo : VertexBuffer
+  -m_ibo : IndexBuffer
+  -m_position : vec2
+  -m_scale : vec2
+  -m_rotation : float
+  -m_color : vec4
+  +GlShape(vertices : ShapeVertex[], vertexCount : size_t,
+           indices : uint[], indexCount : size_t,
+           color : vec4)
+  +setTransform(position : vec2, rotation : float, scale : vec2)
+  +setColor(color : vec4)
+  +position() : vec2
+  +rotation() : float
+  +scale() : vec2
+  +color() : vec4
+  +vao() : VertexArray
+  +ibo() : IndexBuffer
+  +draw(renderer : Renderer2D)
+}
+
+class ShapeFactory {
+  +createRect(size : vec2, color : vec4) : GlShape
+  +createCircle(radius : float, segments : int, color : vec4) : GlShape
+}
+
+class Circle implements Drawable {
+  -m_shape : GlShape
+  +Circle(radius : float, position : vec2, color : vec4, segments : int = 32)
+  +setPosition(p : vec2)
+  +setRadius(r : float, segments : int = 32)
+  +setColor(c : vec4)
+  +draw(renderer : Renderer2D)
+}
+
+' UI-Schicht
+class UIElement implements Drawable {
+  -m_shape : GlShape
+  +UIElement(position : vec2, size : vec2, color : vec4)
+  +setPosition(pos : vec2)
+  +setSize(size : vec2)
+  +setColor(color : vec4)
+  +draw(renderer : Renderer2D)
+}
+
+class Panel extends UIElement {
+}
+
+class Button extends UIElement implements Updateable {
+  -m_onClick : Callback
+  -m_hovered : bool
+  -m_pressed : bool
+  +Button(position : vec2, size : vec2, color : vec4, onClick : Callback)
+  +update(dt : float)
+  +onMouseEvent(mousePos : vec2, pressed : bool)
+}
+
+' Object-Verwaltung
+class ObjectManager {
+  -m_drawables : List<Drawable>
+  -m_updateables : List<Updateable>
+  +createDrawable<T>(args...)
+  +createUpdateable<T>(args...)
+  +addDrawable(obj : Drawable)
+  +addUpdateable(obj : Updateable)
+  +updateAll(dt : float)
+  +drawAll(renderer : Renderer2D)
+}
+
+' Engine (vereinfacht)
+class Engine {
+  -m_objectManager : ObjectManager
+  -m_renderer2D : Renderer2D
+  -m_shapeShader : Shader
+  +run()
+}
+
+' Beziehungen
+
+Drawable <|.. GlShape
+Drawable <|.. UIElement
+Drawable <|.. Circle
+
+Updateable <|.. Button
+
+UIElement <|- - Panel
+UIElement <|- - Button
+
+Renderer2D - -> Shader : uses
+Renderer2D - -> GlShape : submit()
+
+ShapeFactory ..> GlShape : creates
+
+Circle *- - GlShape
+UIElement *- - GlShape
+
+ObjectManager "1" *- - "*" Drawable : manages
+ObjectManager "1" *- - "*" Updateable : manages
+
+Engine - -> ObjectManager
+Engine - -> Renderer2D
+Engine - -> Shader
+@enduml
+
+@startuml
+left to right direction
+
+interface Drawable {
+  +draw(renderer : Renderer2D)
+}
+
+interface Updateable {
+  +update(dt : float)
+}
+
+class Shader {
+  -m_rendererID : uint
+  -m_uniformLocationCache : Map<String,int>
+  +Shader(vertexPath : String, fragmentPath : String)
+  +bind()
+  +unbind()
+  +setUniform1i(name : String, v : int)
+  +setUniform1f(name : String, v : float)
+  +setUniform2f(name : String, x : float, y : float)
+  +setUniform3f(name : String, x : float, y : float, z : float)
+  +setUniform4f(name : String, x : float, y : float, z : float, w : float)
+  +setUniformMat4f(name : String, m : mat4)
+}
+
+class Renderer2D {
+  -m_shapeShader : Shader
+  -m_viewProj : mat4
+  +Renderer2D(shapeShader : Shader)
+  +begin(viewProj : mat4)
+  +submit(shape : GlShape)
+  +end()
+}
+
+class ShapeVertex {
+  +position : vec2
+  +texCoord : vec2
+}
+
+class GlShape implements Drawable {
+  -m_vao : VertexArray
+  -m_vbo : VertexBuffer
+  -m_ibo : IndexBuffer
+  -m_position : vec2
+  -m_scale : vec2
+  -m_rotation : float
+  -m_color : vec4
+  +GlShape(vertices : ShapeVertex[], vertexCount : size_t,
+           indices : uint[], indexCount : size_t,
+           color : vec4)
+  +setTransform(position : vec2, rotation : float, scale : vec2)
+  +setColor(color : vec4)
+  +position() : vec2
+  +rotation() : float
+  +scale() : vec2
+  +color() : vec4
+  +vao() : VertexArray
+  +ibo() : IndexBuffer
+  +draw(renderer : Renderer2D)
+}
+
+class ShapeFactory {
+  +createRect(size : vec2, color : vec4) : GlShape
+  +createCircle(radius : float, segments : int, color : vec4) : GlShape
+}
+
+class Circle implements Drawable {
+  -m_shape : GlShape
+  +Circle(radius : float, position : vec2, color : vec4, segments : int = 32)
+  +setPosition(p : vec2)
+  +setRadius(r : float, segments : int = 32)
+  +setColor(c : vec4)
+  +draw(renderer : Renderer2D)
+}
+
+class UIElement implements Drawable {
+  -m_shape : GlShape
+  +UIElement(position : vec2, size : vec2, color : vec4)
+  +setPosition(pos : vec2)
+  +setSize(size : vec2)
+  +setColor(color : vec4)
+  +draw(renderer : Renderer2D)
+}
+
+class Panel extends UIElement {
+}
+
+class Button extends UIElement implements Updateable {
+  -m_onClick : Callback
+  -m_hovered : bool
+  -m_pressed : bool
+  +Button(position : vec2, size : vec2, color : vec4, onClick : Callback)
+  +update(dt : float)
+  +onMouseEvent(mousePos : vec2, pressed : bool)
+}
+
+class ObjectManager {
+  -m_drawables : List<Drawable>
+  -m_updateables : List<Updateable>
+  +createDrawable<T>(args...)
+  +createUpdateable<T>(args...)
+  +addDrawable(obj : Drawable)
+  +addUpdateable(obj : Updateable)
+  +updateAll(dt : float)
+  +drawAll(renderer : Renderer2D)
+}
+
+class Engine {
+  -m_objectManager : ObjectManager
+  -m_renderer2D : Renderer2D
+  -m_shapeShader : Shader
+  +run()
+}
+
+
+Drawable <|.. GlShape
+Drawable <|.. UIElement
+Drawable <|.. Circle
+
+Updateable <|.. Button
+
+UIElement <|- - Panel
+UIElement <|- - Button
+
+Renderer2D - -> Shader : uses
+Renderer2D - -> GlShape : submit()
+
+ShapeFactory ..> GlShape : creates
+
+Circle *- - GlShape
+UIElement *- - GlShape
+
+ObjectManager "1" *- - "*" Drawable : manages
+ObjectManager "1" *- - "*" Updateable : manages
+
+Engine - -> ObjectManager
+Engine - -> Renderer2D
+Engine - -> Shader
+@enduml
+
+PlantUML version 1.2022.7(Mon Aug 22 17:01:30 UTC 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: null
+--></g></svg>
